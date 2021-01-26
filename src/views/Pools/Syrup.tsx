@@ -58,7 +58,7 @@ const Farm: React.FC = () => {
 
     return {
       ...pool,
-      isFinished: pool.sousId === 0 ? false : pool.isFinished || block > pool.endBlock,
+      isFinished: pool.pastaId === 0 ? false : pool.isFinished || block > pool.endBlock,
       apy,
     }
   })
@@ -70,7 +70,7 @@ const Farm: React.FC = () => {
       <Hero>
         <div>
           <Heading as="h1" size="xxl" mb="16px">
-            {TranslateString(282, 'SYRUP Pool')}
+            {TranslateString(282, 'PASTA Pool')}
           </Heading>
           <ul>
             <li>{TranslateString(580, 'Stake PIZZA to earn new tokens.')}</li>
@@ -78,7 +78,7 @@ const Farm: React.FC = () => {
             <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
           </ul>
         </div>
-        <img src="/images/syrup.png" alt="SYRUP POOL icon" width={410} height={191} />
+        <img src="/images/pasta.png" alt="PASTA POOL icon" width={410} height={191} />
       </Hero>
       <PoolTabButtons />
       <Divider />
@@ -86,14 +86,14 @@ const Farm: React.FC = () => {
         <Route exact path={`${path}`}>
           <>
             {orderBy(openPools, ['sortOrder']).map((pool) => (
-              <PoolCard key={pool.sousId} pool={pool} />
+              <PoolCard key={pool.pastaId} pool={pool} />
             ))}
             <Coming />
           </>
         </Route>
         <Route path={`${path}/history`}>
           {orderBy(finishedPools, ['sortOrder']).map((pool) => (
-            <PoolCard key={pool.sousId} pool={pool} />
+            <PoolCard key={pool.pastaId} pool={pool} />
           ))}
         </Route>
       </FlexLayout>

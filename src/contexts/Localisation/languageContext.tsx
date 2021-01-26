@@ -3,7 +3,7 @@ import { StringTranslations } from '@crowdin/crowdin-api-client'
 import { TranslationsContext } from 'contexts/Localisation/translationsContext'
 import { allLanguages, EN } from 'config/localisation/languageCodes'
 
-const CACHE_KEY = 'pancakeSwapLanguage'
+const CACHE_KEY = 'pizzaSwapLanguage'
 
 export interface LangType {
   code: string

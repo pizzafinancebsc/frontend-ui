@@ -4,14 +4,14 @@ import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { allLanguages } from 'config/localisation/languageCodes'
 import { LanguageContext } from 'contexts/Localisation/languageContext'
 import useTheme from 'hooks/useTheme'
-import { usePriceCakeBusd } from 'state/hooks'
+import { usePricePizzaBusd } from 'state/hooks'
 import config from './config'
 
 const Menu = (props) => {
   const { account, connect, reset } = useWallet()
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
-  const cakePriceUsd = usePriceCakeBusd()
+  const pizzaPriceUsd = usePricePizzaBusd()
 
   return (
     <UikitMenu
@@ -23,7 +23,7 @@ const Menu = (props) => {
       currentLang={selectedLanguage && selectedLanguage.code}
       langs={allLanguages}
       setLang={setSelectedLanguage}
-      cakePriceUsd={cakePriceUsd.toNumber()}
+      pizzaPriceUsd={pizzaPriceUsd.toNumber()}
       links={config}
       {...props}
     />

@@ -13,7 +13,7 @@ const ifos: Ifo[] = [
     launchTime: '9PM SGT',
     saleAmount: '100,000,000 BLINK',
     raiseAmount: '$1,000,000',
-    cakeToBurn: '$500,000',
+    pizzaToBurn: '$500,000',
     projectSiteUrl: 'https://blink.wink.org',
     currency: 'PIZZA-BNB LP',
     currencyAddress: '0xA527a61703D82139F8a06Bc30097cC9CAA2df5A6',

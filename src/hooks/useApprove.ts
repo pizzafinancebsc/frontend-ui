@@ -5,7 +5,7 @@ import { ethers } from 'ethers'
 import { useDispatch } from 'react-redux'
 import { updateUserAllowance, fetchFarmUserDataAsync } from 'state/actions'
 import { approve } from 'utils/callHelpers'
-import { useMasterchef, useCake, useSousChef, useLottery } from './useContract'
+import { useMasterchef, usePizza, usePastaChef, useLottery } from './useContract'
 
 // Approve a Farm
 export const useApprove = (lpContract: Contract) => {
@@ -27,20 +27,20 @@ export const useApprove = (lpContract: Contract) => {
 }
 
 // Approve a Pool
-export const useSousApprove = (lpContract: Contract, sousId) => {
+export const useSousApprove = (lpContract: Contract, pastaId) => {
   const dispatch = useDispatch()
   const { account }: { account: string } = useWallet()
-  const sousChefContract = useSousChef(sousId)
+  const pastaChefContract = usePastaChef(pastaId)
 
   const handleApprove = useCallback(async () => {
     try {
-      const tx = await approve(lpContract, sousChefContract, account)
-      dispatch(updateUserAllowance(sousId, account))
+      const tx = await approve(lpContract, pastaChefContract, account)
+      dispatch(updateUserAllowance(pastaId, account))
       return tx
     } catch (e) {
       return false
     }
-  }, [account, dispatch, lpContract, sousChefContract, sousId])
+  }, [account, dispatch, lpContract, pastaChefContract, pastaId])
 
   return { onApprove: handleApprove }
 }
@@ -48,17 +48,17 @@ export const useSousApprove = (lpContract: Contract, sousId) => {
 // Approve the lottery
 export const useLotteryApprove = () => {
   const { account }: { account: string } = useWallet()
-  const cakeContract = useCake()
+  const pizzaContract = usePizza()
   const lotteryContract = useLottery()
 
   const handleApprove = useCallback(async () => {
     try {
-      const tx = await approve(cakeContract, lotteryContract, account)
+      const tx = await approve(pizzaContract, lotteryContract, account)
       return tx
     } catch (e) {
       return false
     }
-  }, [account, cakeContract, lotteryContract])
+  }, [account, pizzaContract, lotteryContract])
 
   return { onApprove: handleApprove }
 }

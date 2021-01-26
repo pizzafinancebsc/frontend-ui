@@ -6,8 +6,8 @@ import useI18n from 'hooks/useI18n'
 import { useAllHarvest } from 'hooks/useHarvest'
 import useFarmsWithBalance from 'hooks/useFarmsWithBalance'
 import UnlockButton from 'components/UnlockButton'
-import CakeHarvestBalance from './CakeHarvestBalance'
-import CakeWalletBalance from './CakeWalletBalance'
+import PizzaHarvestBalance from './PizzaHarvestBalance'
+import PizzaWalletBalance from './PizzaWalletBalance'
 
 const StyledFarmStakingCard = styled(Card)`
   background-image: url('/images/pizza-bg.svg');
@@ -61,11 +61,11 @@ const FarmedStakingCard = () => {
         </Heading>
         <CardImage src="/images/pizza.svg" alt="pizza logo" width={64} height={64} />
         <Block>
-          <CakeHarvestBalance />
+          <PizzaHarvestBalance />
           <Label>{TranslateString(544, 'PIZZA to Harvest')}</Label>
         </Block>
         <Block>
-          <CakeWalletBalance />
+          <PizzaWalletBalance />
           <Label>{TranslateString(546, 'PIZZA in Wallet')}</Label>
         </Block>
         <Actions>

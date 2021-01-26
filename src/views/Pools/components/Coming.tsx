@@ -62,7 +62,7 @@ const Coming: React.FC = () => {
         </DetailPlaceholder>
         <DetailPlaceholder>
           <div style={{ flex: 1 }}>
-            <span role="img" aria-label="syrup">
+            <span role="img" aria-label="pasta">
               🍕{' '}
             </span>
             {TranslateString(384, 'Your Stake')}:

@@ -7,7 +7,7 @@ import { useLotteryAllowance } from 'hooks/useAllowance'
 import { useLotteryApprove } from 'hooks/useApprove'
 import useTickets from 'hooks/useTickets'
 import useTokenBalance from 'hooks/useTokenBalance'
-import { getCakeAddress } from 'utils/addressHelpers'
+import { getPizzaAddress } from 'utils/addressHelpers'
 import BuyTicketModal from './BuyTicketModal'
 import MyTicketsModal from './UserTicketsModal'
 import PurchaseWarningModal from './PurchaseWarningModal'
@@ -28,13 +28,13 @@ const TicketCard: React.FC = () => {
   const allowance = useLotteryAllowance()
   const { onApprove } = useLotteryApprove()
   const lotteryHasDrawn = useGetLotteryHasDrawn()
-  const cakeBalance = useTokenBalance(getCakeAddress())
+  const pizzaBalance = useTokenBalance(getPizzaAddress())
 
   const tickets = useTickets()
   const ticketsLength = tickets.length
   const [onPresentMyTickets] = useModal(<MyTicketsModal myTicketNumbers={tickets} from="buy" />)
   const [onPresentApprove] = useModal(<PurchaseWarningModal />)
-  const [onPresentBuy] = useModal(<BuyTicketModal max={cakeBalance} tokenName="PIZZA" />)
+  const [onPresentBuy] = useModal(<BuyTicketModal max={pizzaBalance} tokenName="PIZZA" />)
 
   const handleApprove = useCallback(async () => {
     try {

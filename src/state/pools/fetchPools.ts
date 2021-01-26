@@ -1,6 +1,6 @@
 import poolsConfig from 'config/constants/pools'
-import sousChefABI from 'config/abi/sousChef.json'
-import cakeABI from 'config/abi/cake.json'
+import pastaChefABI from 'config/abi/pastaChef.json'
+import pizzaABI from 'config/abi/pizza.json'
 import wbnbABI from 'config/abi/weth.json'
 import { QuoteToken } from 'config/constants/types'
 import multicall from 'utils/multicall'
@@ -10,7 +10,7 @@ import BigNumber from 'bignumber.js'
 const CHAIN_ID = process.env.REACT_APP_CHAIN_ID
 
 export const fetchPoolsBlockLimits = async () => {
-  const poolsWithEnd = poolsConfig.filter((p) => p.sousId !== 0)
+  const poolsWithEnd = poolsConfig.filter((p) => p.pastaId !== 0)
   const callsStartBlock = poolsWithEnd.map((poolConfig) => {
     return {
       address: poolConfig.contractAddress[CHAIN_ID],
@@ -24,14 +24,14 @@ export const fetchPoolsBlockLimits = async () => {
     }
   })
 
-  const starts = await multicall(sousChefABI, callsStartBlock)
-  const ends = await multicall(sousChefABI, callsEndBlock)
+  const starts = await multicall(pastaChefABI, callsStartBlock)
+  const ends = await multicall(pastaChefABI, callsEndBlock)
 
-  return poolsWithEnd.map((cakePoolConfig, index) => {
+  return poolsWithEnd.map((pizzaPoolConfig, index) => {
     const startBlock = starts[index]
     const endBlock = ends[index]
     return {
-      sousId: cakePoolConfig.sousId,
+      pastaId: pizzaPoolConfig.pastaId,
       startBlock: new BigNumber(startBlock).toJSON(),
       endBlock: new BigNumber(endBlock).toJSON(),
     }
@@ -58,16 +58,16 @@ export const fetchPoolsTotalStatking = async () => {
     }
   })
 
-  const nonBnbPoolsTotalStaked = await multicall(cakeABI, callsNonBnbPools)
+  const nonBnbPoolsTotalStaked = await multicall(pizzaABI, callsNonBnbPools)
   const bnbPoolsTotalStaked = await multicall(wbnbABI, callsBnbPools)
 
   return [
     ...nonBnbPools.map((p, index) => ({
-      sousId: p.sousId,
+      pastaId: p.pastaId,
       totalStaked: new BigNumber(nonBnbPoolsTotalStaked[index]).toJSON(),
     })),
     ...bnbPool.map((p, index) => ({
-      sousId: p.sousId,
+      pastaId: p.pastaId,
       totalStaked: new BigNumber(bnbPoolsTotalStaked[index]).toJSON(),
     })),
   ]

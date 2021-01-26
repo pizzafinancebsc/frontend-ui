@@ -5,7 +5,7 @@ import useBlock from 'hooks/useBlock'
 import rabbitmintingfarm from 'config/abi/rabbitmintingfarm.json'
 import { RABBIT_MINTING_FARM_ADDRESS } from 'config/constants/nfts'
 import multicall from 'utils/multicall'
-import { getPancakeRabbitContract } from '../utils/contracts'
+import { getPizzaRabbitContract } from '../utils/contracts'
 
 interface NftProviderProps {
   children: ReactNode
@@ -101,12 +101,12 @@ const NftProvider: React.FC<NftProviderProps> = ({ children }) => {
   useEffect(() => {
     const fetchContractData = async () => {
       try {
-        const pancakeRabbitsContract = getPancakeRabbitContract()
+        const pizzaRabbitsContract = getPizzaRabbitContract()
         const [canClaimArr, hasClaimedArr] = await multicall(rabbitmintingfarm, [
           { address: RABBIT_MINTING_FARM_ADDRESS, name: 'canClaim', params: [account] },
           { address: RABBIT_MINTING_FARM_ADDRESS, name: 'hasClaimed', params: [account] },
         ])
-        const balanceOf = await pancakeRabbitsContract.methods.balanceOf(account).call()
+        const balanceOf = await pizzaRabbitsContract.methods.balanceOf(account).call()
         const [canClaim]: [boolean] = canClaimArr
         const [hasClaimed]: [boolean] = hasClaimedArr
 
@@ -117,8 +117,8 @@ const NftProvider: React.FC<NftProviderProps> = ({ children }) => {
         if (balanceOf > 0) {
           const getTokenIdAndBunnyId = async (index: number) => {
             try {
-              const tokenId = await pancakeRabbitsContract.methods.tokenOfOwnerByIndex(account, index).call()
-              const bunnyId = await pancakeRabbitsContract.methods.getBunnyId(tokenId).call()
+              const tokenId = await pizzaRabbitsContract.methods.tokenOfOwnerByIndex(account, index).call()
+              const bunnyId = await pizzaRabbitsContract.methods.getBunnyId(tokenId).call()
 
               return [parseInt(bunnyId, 10), parseInt(tokenId, 10)]
             } catch (error) {

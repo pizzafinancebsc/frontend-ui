@@ -2,18 +2,18 @@ import { useEffect, useState } from 'react'
 import { AbiItem } from 'web3-utils'
 import { ContractOptions } from 'web3-eth-contract'
 import useWeb3 from 'hooks/useWeb3'
-import { getMasterChefAddress, getCakeAddress, getLotteryAddress, getLotteryTicketAddress } from 'utils/addressHelpers'
+import { getMasterChefAddress, getPizzaAddress, getLotteryAddress, getLotteryTicketAddress } from 'utils/addressHelpers'
 import { poolsConfig } from 'config/constants'
 import { PoolCategory } from 'config/constants/types'
 import ifo from 'config/abi/ifo.json'
 import erc20 from 'config/abi/erc20.json'
 import rabbitmintingfarm from 'config/abi/rabbitmintingfarm.json'
-import pancakeRabbits from 'config/abi/pancakeRabbits.json'
+import pizzaRabbits from 'config/abi/pizzaRabbits.json'
 import lottery from 'config/abi/lottery.json'
 import lotteryTicket from 'config/abi/lotteryNft.json'
 import masterChef from 'config/abi/masterchef.json'
-import sousChef from 'config/abi/sousChef.json'
-import sousChefBnb from 'config/abi/sousChefBnb.json'
+import pastaChef from 'config/abi/pastaChef.json'
+import pastaChefBnb from 'config/abi/pastaChefBnb.json'
 
 const useContract = (abi: AbiItem, address: string, contractOptions?: ContractOptions) => {
   const web3 = useWeb3()
@@ -40,8 +40,8 @@ export const useERC20 = (address: string) => {
   return useContract(erc20Abi, address)
 }
 
-export const useCake = () => {
-  return useERC20(getCakeAddress())
+export const usePizza = () => {
+  return useERC20(getPizzaAddress())
 }
 
 export const useRabbitMintingFarm = (address: string) => {
@@ -49,9 +49,9 @@ export const useRabbitMintingFarm = (address: string) => {
   return useContract(rabbitMintingFarmAbi, address)
 }
 
-export const usePancakeRabbits = (address: string) => {
-  const pancakeRabbitsAbi = (pancakeRabbits as unknown) as AbiItem
-  return useContract(pancakeRabbitsAbi, address)
+export const usePizzaRabbits = (address: string) => {
+  const pizzaRabbitsAbi = (pizzaRabbits as unknown) as AbiItem
+  return useContract(pizzaRabbitsAbi, address)
 }
 
 export const useLottery = () => {
@@ -69,9 +69,9 @@ export const useMasterchef = () => {
   return useContract(abi, getMasterChefAddress())
 }
 
-export const useSousChef = (id) => {
-  const config = poolsConfig.find((pool) => pool.sousId === id)
-  const rawAbi = config.poolCategory === PoolCategory.BINANCE ? sousChefBnb : sousChef
+export const usePastaChef = (id) => {
+  const config = poolsConfig.find((pool) => pool.pastaId === id)
+  const rawAbi = config.poolCategory === PoolCategory.BINANCE ? pastaChefBnb : pastaChef
   const abi = (rawAbi as unknown) as AbiItem
   return useContract(abi, config.contractAddress[process.env.REACT_APP_CHAIN_ID])
 }

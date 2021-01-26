@@ -35,7 +35,7 @@ const RegisterToWinPage = () => {
             NFTs
           </Heading>
           <Heading as="h2" size="lg" color="secondary" mb="16px">
-            {TranslateString(614, 'Trade in for CAKE, or keep for your collection!')}
+            {TranslateString(614, 'Trade in for PIZZA, or keep for your collection!')}
           </Heading>
           <Text mb="24px">{TranslateString(616, 'Register your interest in winning an NFT below.')}</Text>
           <Cta>

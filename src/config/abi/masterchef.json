@@ -2,13 +2,13 @@
   {
     "inputs": [
       {
-        "internalType": "contract CakeToken",
-        "name": "_cake",
+        "internalType": "contract PizzaToken",
+        "name": "_pizza",
         "type": "address"
       },
       {
         "internalType": "contract SyrupBar",
-        "name": "_syrup",
+        "name": "_pasta",
         "type": "address"
       },
       {
@@ -18,7 +18,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_cakePerBlock",
+        "name": "_pizzaPerBlock",
         "type": "uint256"
       },
       {
@@ -162,10 +162,10 @@
   },
   {
     "inputs": [],
-    "name": "cake",
+    "name": "pizza",
     "outputs": [
       {
-        "internalType": "contract CakeToken",
+        "internalType": "contract PizzaToken",
         "name": "",
         "type": "address"
       }
@@ -175,7 +175,7 @@
   },
   {
     "inputs": [],
-    "name": "cakePerBlock",
+    "name": "pizzaPerBlock",
     "outputs": [
       {
         "internalType": "uint256",
@@ -352,7 +352,7 @@
         "type": "address"
       }
     ],
-    "name": "pendingCake",
+    "name": "pendingPizza",
     "outputs": [
       {
         "internalType": "uint256",
@@ -390,7 +390,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "accCakePerShare",
+        "name": "accPizzaPerShare",
         "type": "uint256"
       }
     ],
@@ -468,7 +468,7 @@
   },
   {
     "inputs": [],
-    "name": "syrup",
+    "name": "pasta",
     "outputs": [
       {
         "internalType": "contract SyrupBar",

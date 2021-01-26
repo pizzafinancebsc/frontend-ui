@@ -4,7 +4,7 @@ import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { Button, Modal, Text } from '@pizzafinance/ui-sdk'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { RABBIT_MINTING_FARM_ADDRESS } from 'config/constants/nfts'
-import { getCakeAddress } from 'utils/addressHelpers'
+import { getPizzaAddress } from 'utils/addressHelpers'
 import { Nft } from 'config/constants/types'
 import useTokenBalance from 'hooks/useTokenBalance'
 import useI18n from 'hooks/useI18n'
@@ -37,8 +37,8 @@ const ClaimNftModal: React.FC<ClaimNftModalProps> = ({ nft, onSuccess, onDismiss
   const TranslateString = useI18n()
   const { account } = useWallet()
   const rabbitMintingContract = useRabbitMintingFarm(RABBIT_MINTING_FARM_ADDRESS)
-  const cakeBalance = useTokenBalance(getCakeAddress())
-  const cakeInWallet = getBalanceNumber(cakeBalance)
+  const pizzaBalance = useTokenBalance(getPizzaAddress())
+  const pizzaInWallet = getBalanceNumber(pizzaBalance)
 
   const handleConfirm = async () => {
     try {
@@ -63,10 +63,10 @@ const ClaimNftModal: React.FC<ClaimNftModalProps> = ({ nft, onSuccess, onDismiss
   }
 
   useEffect(() => {
-    if (cakeInWallet === 0) {
-      setError('You must have a CAKE balance greater than zero to claim NFT')
+    if (pizzaInWallet === 0) {
+      setError('You must have a PIZZA balance greater than zero to claim NFT')
     }
-  }, [cakeInWallet, setError])
+  }, [pizzaInWallet, setError])
 
   return (
     <Modal title={TranslateString(999, 'Claim NFT')} onDismiss={onDismiss}>
@@ -85,7 +85,7 @@ const ClaimNftModal: React.FC<ClaimNftModalProps> = ({ nft, onSuccess, onDismiss
         <Button fullWidth variant="secondary" onClick={onDismiss}>
           {TranslateString(462, 'Cancel')}
         </Button>
-        <Button fullWidth onClick={handleConfirm} disabled={!account || isLoading || cakeInWallet <= 0}>
+        <Button fullWidth onClick={handleConfirm} disabled={!account || isLoading || pizzaInWallet <= 0}>
           {TranslateString(464, 'Confirm')}
         </Button>
       </Actions>

@@ -11,7 +11,7 @@ export interface Ifo {
   launchTime: string
   saleAmount: string
   raiseAmount: string
-  cakeToBurn: string
+  pizzaToBurn: string
   projectSiteUrl: string
   currency: string
   currencyAddress: string
@@ -21,11 +21,12 @@ export interface Ifo {
 
 export enum QuoteToken {
   'BNB' = 'BNB',
-  'CAKE' = 'CAKE',
-  'SYRUP' = 'SYRUP',
+  'PIZZA' = 'PIZZA',
+  'CHS' = 'CHS',
   'BUSD' = 'BUSD',
-  'TWT' = 'TWT',
-  'UST' = 'UST',
+  'HOTS' = 'HOTS',
+  'KP3RB' = 'KP3RB',
+  'PASTA' = 'PASTA',
 }
 
 export enum PoolCategory {
@@ -57,7 +58,7 @@ export interface FarmConfig {
 }
 
 export interface PoolConfig {
-  sousId: number
+  pastaId: number
   image?: string
   tokenName: string
   stakingTokenName: QuoteToken

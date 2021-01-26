@@ -1,9 +1,9 @@
 [
   {
     "inputs": [
-      { "internalType": "contract IBEP20", "name": "_cakeToken", "type": "address" },
+      { "internalType": "contract IBEP20", "name": "_pizzaToken", "type": "address" },
       { "internalType": "uint256", "name": "_totalSupplyDistributed", "type": "uint256" },
-      { "internalType": "uint256", "name": "_cakePerBurn", "type": "uint256" },
+      { "internalType": "uint256", "name": "_pizzaPerBurn", "type": "uint256" },
       { "internalType": "string", "name": "_baseURI", "type": "string" },
       { "internalType": "string", "name": "_ipfsHash", "type": "string" },
       { "internalType": "uint256", "name": "_endBlockNumber", "type": "uint256" }
@@ -48,14 +48,14 @@
   },
   {
     "inputs": [],
-    "name": "cakePerBurn",
+    "name": "pizzaPerBurn",
     "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
-    "name": "cakeToken",
+    "name": "pizzaToken",
     "outputs": [{ "internalType": "contract IBEP20", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
@@ -118,8 +118,8 @@
   },
   {
     "inputs": [],
-    "name": "pancakeBunnies",
-    "outputs": [{ "internalType": "contract PancakeBunnies", "name": "", "type": "address" }],
+    "name": "pizzaBunnies",
+    "outputs": [{ "internalType": "contract PanpizzaBunnies", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
   },
@@ -155,7 +155,7 @@
   },
   {
     "inputs": [{ "internalType": "uint256", "name": "_amount", "type": "uint256" }],
-    "name": "withdrawCake",
+    "name": "withdrawPizza",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

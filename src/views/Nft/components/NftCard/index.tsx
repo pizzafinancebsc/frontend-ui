@@ -17,7 +17,7 @@ import { Nft } from 'config/constants/types'
 import InfoRow from '../InfoRow'
 import Image from '../Image'
 import { NftProviderContext } from '../../contexts/NftProvider'
-import { getPancakeRabbitContract } from '../../utils/contracts'
+import { getPizzaRabbitContract } from '../../utils/contracts'
 import ClaimNftModal from '../ClaimNftModal'
 import BurnNftModal from '../BurnNftModal'
 import TransferNftModal from '../TransferNftModal'
@@ -79,7 +79,7 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
   const fetchDetails = useCallback(async () => {
     setState((prevState) => ({ ...prevState, isLoading: true }))
     try {
-      const { methods } = getPancakeRabbitContract()
+      const { methods } = getPizzaRabbitContract()
       const bunnyCount = await methods.bunnyCount(bunnyId).call()
       const bunnyBurnCount = await methods.bunnyBurnCount(bunnyId).call()
 

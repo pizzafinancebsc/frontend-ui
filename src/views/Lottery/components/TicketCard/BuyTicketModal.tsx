@@ -62,7 +62,7 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
     }
   }, [maxTickets])
 
-  const cakeCosts = (amount: string): number => {
+  const pizzaCosts = (amount: string): number => {
     return +amount * 10
   }
   return (
@@ -86,7 +86,7 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
             'Ticket purchases are final. Your PIZZA cannot be returned to you after buying tickets.',
           )}
         </Announce>
-        <Final>{TranslateString(460, `You will spend: ${cakeCosts(val)} PIZZA`)}</Final>
+        <Final>{TranslateString(460, `You will spend: ${pizzaCosts(val)} PIZZA`)}</Final>
       </div>
       <ModalActions>
         <Button fullWidth variant="secondary" onClick={onDismiss}>

@@ -5,7 +5,7 @@ import useI18n from 'hooks/useI18n'
 import Page from 'components/layout/Page'
 import FarmStakingCard from './components/FarmStakingCard'
 import LotteryCard from './components/LotteryCard'
-import CakeStats from './components/CakeStats'
+import PizzaStats from './components/PizzaStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 
 const Hero = styled.div`
@@ -67,7 +67,7 @@ const Home: React.FC = () => {
         <Cards>
           <FarmStakingCard />
           <LotteryCard />
-          <CakeStats />
+          <PizzaStats />
           <TotalValueLockedCard />
         </Cards>
       </div>
