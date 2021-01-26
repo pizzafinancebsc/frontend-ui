@@ -23,10 +23,7 @@ const OldSyrupTitle: React.FC<Props> = ({ hasBalance = false }) => {
     return (
       <div>
         <Title>Action Required</Title>
-        <ActionLink
-          href="/"
-          target="_blank"
-        >
+        <ActionLink href="/" target="_blank">
           What do I need to do?
         </ActionLink>
       </div>
