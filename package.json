@@ -5,7 +5,7 @@
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
-    "build": "CI=false react-scripts build",
+    "build": "CI= react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
@@ -31,10 +31,9 @@
   },
   "dependencies": {
     "@binance-chain/bsc-use-wallet": "^0.8.1",
-    "@crowdin/crowdin-api-client": "^1.10.1",
+    "@crowdin/crowdin-api-client": "^1.10.3",
     "@ethersproject/abi": "^5.0.7",
-    "@pizzafinance/ui-sdk": "^0.9.0",
-    "@pizzafinance/ui-sdk": "^0.1.0",
+    "@pizzafinance/ui-sdk": "^0.1.1",
     "@reduxjs/toolkit": "^1.5.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
