@@ -13,7 +13,7 @@ import PizzaWinnings from './PizzaWinnings'
 import LotteryJackpot from './LotteryJackpot'
 
 const StyledLotteryCard = styled(Card)`
-  background-image: url('/images/ticket-bg.svg');
+  background-image: url('/images/partner-bg.svg');
   background-repeat: no-repeat;
   background-position: top right;
   min-height: 376px;
@@ -67,30 +67,14 @@ const FarmedStakingCard = () => {
     <StyledLotteryCard>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(550, 'Your Lottery Winnings')}
+          {TranslateString(550, ' Partnership')}
         </Heading>
-        <CardImage src="/images/ticket.svg" alt="Pizza logo" width={64} height={64} />
-        <Block>
-          <PizzaWinnings />
-          <Label>{TranslateString(552, 'PIZZA to Collect')}</Label>
-        </Block>
-        <Block>
-          <LotteryJackpot />
-          <Label>{TranslateString(554, 'Total jackpot this round')}</Label>
-        </Block>
-        <Actions>
-          <Button
-            id="dashboard-collect-winnings"
-            disabled={getBalanceNumber(claimAmount) === 0 || requesteClaim}
-            onClick={handleClaim}
-            style={{ marginRight: '8px' }}
-          >
-            {TranslateString(556, 'Collect Winnings')}
-          </Button>
-          <Button id="dashboard-buy-tickets" variant="secondary" onClick={onPresentBuy} disabled={lotteryHasDrawn}>
-            {TranslateString(558, 'Buy Tickets')}
-          </Button>
-        </Actions>
+        <a href="https://cheeseswap.app/">
+          <CardImage src="/images/cheeseswap.svg" alt="CheeseSwap logo" width={256} />
+        </a>
+        <a href="https://keep3rb.network/">
+          <CardImage src="/images/keep3rb.svg" alt="Keep3rb logo" width={256} />
+        </a>
       </CardBody>
     </StyledLotteryCard>
   )

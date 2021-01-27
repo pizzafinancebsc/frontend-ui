@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://swap.pizzafinance.app',
+        href: 'https://cheeseswap.app',
       },
       {
         label: 'Liquidity',
-        href: 'https://swap.pizzafinance.app/#/pool',
+        href: 'https://cheeseswap.app/#/pool',
       },
     ],
   },
@@ -36,19 +36,19 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Overview',
-        href: 'https://info.pizzafinance.app',
+        href: 'https://info.cheeseswap.app',
       },
       {
         label: 'Tokens',
-        href: 'https://info.pizzafinance.app/tokens',
+        href: 'https://info.cheeseswap.app/tokens',
       },
       {
         label: 'Pairs',
-        href: 'https://info.pizzafinance.app/pairs',
+        href: 'https://info.cheeseswap.app/pairs',
       },
       {
         label: 'Accounts',
-        href: 'https://info.pizzafinance.app/accounts',
+        href: 'https://info.cheeseswap.app/accounts',
       },
     ],
   },
