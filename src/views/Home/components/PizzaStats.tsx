@@ -20,7 +20,7 @@ const Row = styled.div`
   margin-bottom: 8px;
 `
 
-export const PizzaStats = () => {
+const PizzaStats = () => {
   const TranslateString = useI18n()
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getPizzaAddress())
