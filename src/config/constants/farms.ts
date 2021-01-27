@@ -64,7 +64,7 @@ const farms: FarmConfig[] = [
     isCommunity: false,
   },
   {
-    pid: 2,
+    pid: 5,
     lpSymbol: 'BNB-BUSD LP',
     lpAddresses: {
       97: '',
