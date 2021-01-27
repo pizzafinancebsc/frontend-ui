@@ -98,7 +98,7 @@ const FCard = styled.div`
   align-self: stretch;
   background: ${(props) => props.theme.card.background};
   border-radius: 32px;
-  box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05);
+  box-shadow: 0px 0px 10px rgb(75, 77, 80, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-around;

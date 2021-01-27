@@ -102,7 +102,7 @@ const Farms: React.FC = () => {
           </Route>
         </FlexLayout>
       </div>
-      <Image src="/images/pizzaroom.png" alt="PizzaFinance illustration" width={949} height={384} responsive />
+      <Image src="/images/farm-bg.svg" alt="PizzaFinance illustration" width={1080} height={600} responsive />
     </Page>
   )
 }

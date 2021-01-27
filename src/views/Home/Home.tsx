@@ -3,14 +3,14 @@ import styled from 'styled-components'
 import { Heading, Text, BaseLayout } from '@pizzafinance/ui-sdk'
 import useI18n from 'hooks/useI18n'
 import Page from 'components/layout/Page'
+import PizzaStats from './components/PizzaStats'
 import FarmStakingCard from './components/FarmStakingCard'
 import LotteryCard from './components/LotteryCard'
-import PizzaStats from './components/PizzaStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 
 const Hero = styled.div`
   align-items: center;
-  background-image: url('/images/pan-bg-mobile.svg');
+  background-image: url('/images/pizza-bg-mobile.svg');
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
@@ -22,7 +22,7 @@ const Hero = styled.div`
   text-align: center;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/pan-bg2.svg'), url('/images/pan-bg.svg');
+    background-image: url('/images/home-bg.svg'), url('/images/home-bg2.svg');
     background-position: left center, right center;
     height: 165px;
     padding-top: 0;

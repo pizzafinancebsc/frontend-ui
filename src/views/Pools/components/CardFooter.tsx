@@ -103,7 +103,7 @@ const CardFooter: React.FC<Props> = ({
             <FlexFull>
               <Label>
                 <span role="img" aria-label="pasta">
-                  🥞{' '}
+                  🍕{' '}
                 </span>
                 {TranslateString(408, 'Total')}
               </Label>
