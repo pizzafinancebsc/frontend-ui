@@ -1,1 +1,1 @@
-export { default } from './Syrup'
+export { default } from './Pasta'
