@@ -8,7 +8,7 @@ const pools: PoolConfig[] = [
     stakingTokenAddress: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
     contractAddress: {
       97: '',
-      56: '0x18eE7725D38C3d8FB7ADD6C94823d6b88bD620D2',
+      56: '',
     },
     poolCategory: PoolCategory.CORE,
     projectLink: 'http://pizzafinance.app/',
@@ -18,7 +18,7 @@ const pools: PoolConfig[] = [
     isFinished: false,
     tokenDecimals: 18,
   },
-  
+
 ]
 
 export default pools
