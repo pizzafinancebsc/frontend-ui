@@ -48,6 +48,21 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.chs,
   },
   {
+    pid: 6,
+    lpSymbol: 'CHS-WBNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x51A162dd678d75C269Ef6680193C019e0B4Bda7E',
+    },
+    tokenSymbol: 'PIZZA',
+    tokenAddresses: {
+      97: '',
+      56: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
     pid: 2,
     lpSymbol: 'PIZZA-BUSD LP',
     lpAddresses: {
