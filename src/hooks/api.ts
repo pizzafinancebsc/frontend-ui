@@ -5,14 +5,16 @@ export const baseUrl = 'https://cheeseswap.info/dev/v2'
 /* eslint-disable camelcase */
 
 export interface TradePair {
-  swap_pair_contract: string
+  tokenIds: string
   base_symbol: string
   quote_symbol: string
   last_price: number
-  base_volume_24_h: number
-  quote_volume_24_h: number
+  base_volume: number
+  quote_volume: number
+  
 }
 
+ 
 export interface ApiStatResponse {
   update_at: string
   '24h_total_volume': number
@@ -29,7 +31,7 @@ export const useGetStats = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`${baseUrl}/stat`)
+        const response = await fetch(`${baseUrl}/tickers`)
         const responsedata: ApiStatResponse = await response.json()
 
         setData(responsedata)
