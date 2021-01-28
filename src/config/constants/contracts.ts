@@ -47,6 +47,10 @@ export default {
     56: '0x5EA29eEe799aA7cC379FdE5cf370BC24f2Ea7c81',
     97: '',
   },
+  usdt: {
+    56: '0x55d398326f99059fF775485246999027B3197955',
+    97: '',
+  },
   pizzaRabbits: {
     56: '',
     97: '',
