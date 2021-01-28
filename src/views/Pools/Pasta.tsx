@@ -72,8 +72,11 @@ const Farm: React.FC = () => {
           <Heading as="h1" size="xxl" mb="16px">
             {TranslateString(282, 'PASTA Pool')}
           </Heading>
+          <Heading as="h4" size="l" mb="14px">
+            {TranslateString(282, 'PIZZA Smart Staking Pool')}
+          </Heading>
           <ul>
-            <li>{TranslateString(580, 'Stake PIZZA to earn new tokens.')}</li>
+            <li>{TranslateString(580, 'Stake PIZZA to earn PASTA or any listed NEW tokens.')}</li>
             <li>{TranslateString(404, 'You can unstake at any time.')}</li>
             <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
           </ul>

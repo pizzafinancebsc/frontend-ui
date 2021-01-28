@@ -51,7 +51,7 @@ const Farms: React.FC = () => {
 
         let apy = pizzaPriceVsBNB.times(pizzaRewardPerYear).div(farm.lpTotalInQuoteToken)
 
-        if (farm.quoteTokenSymbol === QuoteToken.BUSD || farm.quoteTokenSymbol === QuoteToken.CHS) {
+        if (farm.quoteTokenSymbol === QuoteToken.BUSD || farm.quoteTokenSymbol === QuoteToken.USDT) {
           apy = pizzaPriceVsBNB.times(pizzaRewardPerYear).div(farm.lpTotalInQuoteToken).times(bnbPrice)
         } else if (farm.quoteTokenSymbol === QuoteToken.PIZZA) {
           apy = pizzaRewardPerYear.div(farm.lpTotalInQuoteToken)
@@ -88,7 +88,7 @@ const Farms: React.FC = () => {
   return (
     <Page>
       <Heading as="h1" size="lg" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-        {TranslateString(999, 'Stake LP tokens to earn PIZZA')}
+        {TranslateString(999, 'Stake Cheese-LP tokens to earn PIZZA')}
       </Heading>
       <FarmTabButtons />
       <div>

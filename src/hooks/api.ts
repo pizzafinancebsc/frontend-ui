@@ -11,10 +11,10 @@ export interface TradePair {
   last_price: number
   base_volume: number
   quote_volume: number
-  
+
 }
 
- 
+
 export interface ApiStatResponse {
   update_at: string
   '24h_total_volume': number

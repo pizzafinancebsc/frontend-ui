@@ -61,8 +61,7 @@ export const unstake = async (masterChefContract, pid, amount, account) => {
 }
 
 export const pastaUnstake = async (pastaChefContract, amount, account) => {
-  // shit code: hard fix for old CTK and BLK
-  if (pastaChefContract.options.address === '0x3B9B74f48E89Ebd8b45a53444327013a2308A9BC') {
+  if (pastaChefContract.options.address === '0xB0953765fC1A2a25e8DFBe7c01245132c800d673') {
     return pastaChefContract.methods
       .emergencyWithdraw()
       .send({ from: account })
@@ -70,7 +69,7 @@ export const pastaUnstake = async (pastaChefContract, amount, account) => {
         return tx.transactionHash
       })
   }
-  if (pastaChefContract.options.address === '0xBb2B66a2c7C2fFFB06EA60BeaD69741b3f5BF831') {
+  if (pastaChefContract.options.address === '0xB0953765fC1A2a25e8DFBe7c01245132c800d673') {
     return pastaChefContract.methods
       .emergencyWithdraw()
       .send({ from: account })

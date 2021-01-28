@@ -34,14 +34,14 @@ export const useSousUnstake = (pastaId) => {
   const { account } = useWallet()
   const masterChefContract = useMasterchef()
   const pastaChefContract = usePastaChef(pastaId)
-  const isOldSyrup = PASTAIDS.includes(pastaId)
+  const isOldPasta = PASTAIDS.includes(pastaId)
 
   const handleUnstake = useCallback(
     async (amount: string) => {
       if (pastaId === 0) {
         const txHash = await unstake(masterChefContract, 0, amount, account)
         console.info(txHash)
-      } else if (isOldSyrup) {
+      } else if (isOldPasta) {
         const txHash = await pastaEmegencyUnstake(pastaChefContract, amount, account)
         console.info(txHash)
       } else {
@@ -52,7 +52,7 @@ export const useSousUnstake = (pastaId) => {
       dispatch(updateUserBalance(pastaId, account))
       dispatch(updateUserPendingReward(pastaId, account))
     },
-    [account, dispatch, isOldSyrup, masterChefContract, pastaChefContract, pastaId],
+    [account, dispatch, isOldPasta, masterChefContract, pastaChefContract, pastaId],
   )
 
   return { onUnstake: handleUnstake }
