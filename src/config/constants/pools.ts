@@ -13,7 +13,7 @@ const pools: PoolConfig[] = [
     poolCategory: PoolCategory.CORE,
     projectLink: 'http://pizzafinance.app/',
     harvest: true,
-    tokenPerBlock: '0.25',
+    tokenPerBlock: '0.025',
     sortOrder: 1,
     isFinished: false,
     tokenDecimals: 18,
