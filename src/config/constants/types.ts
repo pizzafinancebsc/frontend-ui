@@ -27,6 +27,7 @@ export enum QuoteToken {
   'HOTS' = 'HOTS',
   'KP3RB' = 'KP3RB',
   'PASTA' = 'PASTA',
+  'USDT' = 'USDT',
 }
 
 export enum PoolCategory {
