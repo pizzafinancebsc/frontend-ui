@@ -3,7 +3,7 @@ import { PoolConfig, QuoteToken, PoolCategory } from './types'
 const pools: PoolConfig[] = [
   {
     pastaId: 0,
-    tokenName: 'PIZZA',
+    tokenName: 'PASTA',
     stakingTokenName: QuoteToken.PIZZA,
     stakingTokenAddress: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
     contractAddress: {
