@@ -48,7 +48,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.chs,
   },
   {
-    pid: 6,
+    pid: 4,
     lpSymbol: 'CHS-WBNB LP',
     lpAddresses: {
       97: '',

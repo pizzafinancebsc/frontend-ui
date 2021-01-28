@@ -7,7 +7,7 @@
         "type": "address"
       },
       {
-        "internalType": "contract SyrupBar",
+        "internalType": "contract PastaBar",
         "name": "_pasta",
         "type": "address"
       },
@@ -158,32 +158,6 @@
     "name": "add",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "pizza",
-    "outputs": [
-      {
-        "internalType": "contract PizzaToken",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "pizzaPerBlock",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -340,6 +314,19 @@
     "type": "function"
   },
   {
+    "inputs": [],
+    "name": "pasta",
+    "outputs": [
+      {
+        "internalType": "contract PastaBar",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "inputs": [
       {
         "internalType": "uint256",
@@ -353,6 +340,32 @@
       }
     ],
     "name": "pendingPizza",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pizza",
+    "outputs": [
+      {
+        "internalType": "contract PizzaToken",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pizzaPerBlock",
     "outputs": [
       {
         "internalType": "uint256",
@@ -461,19 +474,6 @@
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "pasta",
-    "outputs": [
-      {
-        "internalType": "contract SyrupBar",
-        "name": "",
-        "type": "address"
       }
     ],
     "stateMutability": "view",

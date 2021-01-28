@@ -9,7 +9,7 @@ export default {
   },
   masterChef: {
     97: '',
-    56: '0x18eE7725D38C3d8FB7ADD6C94823d6b88bD620D2',
+    56: '0xD3849bCefE2D032b7EA4e01aA18EA5D1797bdcc6',
   },
   pastaChef: {
     97: '',
