@@ -49,7 +49,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 6,
-    lpSymbol: 'CHS-WBNB LP',
+    lpSymbol: 'CHS-BNB LP',
     lpAddresses: {
       97: '',
       56: '0x51A162dd678d75C269Ef6680193C019e0B4Bda7E',

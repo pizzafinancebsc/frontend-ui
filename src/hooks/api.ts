@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export const baseUrl = 'https://api.pizzafinance.app/api/v1'
+export const baseUrl = 'https://cheeseswap.info/dev/v2'
 
 /* eslint-disable camelcase */
 
