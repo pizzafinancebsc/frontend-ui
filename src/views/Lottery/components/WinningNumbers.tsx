@@ -112,7 +112,7 @@ const WinningNumbers: React.FC = () => {
 const Link = styled.a`
   margin-top: 1em;
   text-decoration: none;
-  color: #25beca;
+  color: #2ab770;
 `
 
 const Row = styled.div`
@@ -185,7 +185,7 @@ const CenteredTextWithPadding = styled.div`
 const TicketNumberBox = styled.div`
   padding: 10px;
   border-radius: 12px;
-  background: linear-gradient(180deg, #54dade 0%, #24c7d6 76.22%);
+  background: linear-gradient(180deg, #dcb46d 0%, #d0a860  76.22%);
   color: white;
   font-size: 20px;
   font-weight: 900;
