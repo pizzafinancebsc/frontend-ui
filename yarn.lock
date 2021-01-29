@@ -1782,11 +1782,11 @@
     chalk "^4.0.0"
 
 "@json-rpc-tools/types@^1.5.7":
-  version "1.5.8"
-  resolved "https://registry.yarnpkg.com/@json-rpc-tools/types/-/types-1.5.8.tgz#8e511dd9ecc354f6e2cad0859315904614745c12"
-  integrity sha512-PZj2TP/p0H7mFrsKoUwInh39b2bmFzv5boF0jX44QLWLW6bhhUzcBtKiEznTLjUdeGdMNaUncKI2VEIq/VXSDQ==
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/@json-rpc-tools/types/-/types-1.5.10.tgz#c4bf0e45d667e83b65c84e5427120afa8d28a2a9"
+  integrity sha512-d8QAsWI0mgjAkIEkkWrG8gUzqIJNdubu8yPy6urxrLjpLzYsnicCWHoYFFTtArXUVYBGHUP2cZaZ0hHCioj2Mg==
   dependencies:
-    keyvaluestorage "^0.6.0"
+    keyvaluestorage "^0.7.0"
 
 "@json-rpc-tools/utils@1.5.7":
   version "1.5.7"
@@ -1822,12 +1822,12 @@
     fastq "^1.6.0"
 
 "@npmcli/move-file@^1.0.1":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@npmcli/move-file/-/move-file-1.1.0.tgz#4ef8a53d727b9e43facf35404caf55ebf92cfec8"
-  integrity sha512-Iv2iq0JuyYjKeFkSR4LPaCdDZwlGK9X2cP/01nJcp3yMJ1FjNd9vpiEYvLUgzBxKPg2SFmaOhizoQsPc0LWeOQ==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@npmcli/move-file/-/move-file-1.1.1.tgz#31a3afae95308ef12f58ac147b3e33aae621241d"
+  integrity sha512-LtWTicuF2wp7PNTuyCwABx7nNG+DnzSE8gN0iWxkC6mpgm/iOPu0ZMTkXuCxmJxtWFsDxUaixM9COSNJEMUfuQ==
   dependencies:
     mkdirp "^1.0.4"
-    rimraf "^2.7.1"
+    rimraf "^3.0.2"
 
 "@pancakeswap-libs/eslint-config-pancake@1.0.0":
   version "1.0.0"
@@ -1853,10 +1853,10 @@
     hash.js "^1.1.7"
     randombytes "^2.1.0"
 
-"@pizzafinance/ui-sdk@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@pizzafinance/ui-sdk/-/ui-sdk-0.1.2.tgz#7b1fd9a58d0f13928cdd138e5e3bb2ad504bded6"
-  integrity sha512-HNaHNSyYpni7lrVnWgpsDT40JMBn5AhBSHtLzwDQqWcnI9Kl2yLQk668f+2yUx6hur/15YZFOLxzUCVpXdG/Mg==
+"@pizzafinance/ui-sdk@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@pizzafinance/ui-sdk/-/ui-sdk-0.1.3.tgz#68218a227367c238d85afd94031e2ec643f9656b"
+  integrity sha512-4NGqENuXXJ4SBA5PqMkxEDHbGNeBqjUMX5LhMLxm6oAyAbVW8oba5aEeFqu8X6BrzVVzeIqPbGxeZ1cGJZTpVg==
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
@@ -6218,9 +6218,9 @@ ejs@^3.1.5:
     jake "^10.6.1"
 
 electron-to-chromium@^1.3.47, electron-to-chromium@^1.3.564, electron-to-chromium@^1.3.634:
-  version "1.3.646"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.646.tgz#a7dc089d6d83b6d6cc01f91de524e91f12e6ccfa"
-  integrity sha512-P+3q8ugIPezulqoBYaLoUsF0fT4YNpe+zEDmdDUDnHZUAeSbBjMbis+JjJp9duU8BdfWV3VXf27NTBcwhRTsAQ==
+  version "1.3.648"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.648.tgz#b05926eca1843c04b283e682a1fc6c10af7e9dda"
+  integrity sha512-4POzwyQ80tkDiBwkxn7IpfzioimrjRSFX1sCQ3pLZsYJ5ERYmwzdq0hZZ3nFP7Z6GtmnSn3xwWDm8FPlMeOoEQ==
 
 elliptic@6.5.2:
   version "6.5.2"
@@ -7451,9 +7451,9 @@ fast-safe-stringify@^2.0.6:
   integrity sha512-Utm6CdzT+6xsDk2m8S6uL8VHxNwI6Jub+e9NYTcAms28T84pTa25GJQV9j0CY0N1rM8hK4x6grpF2BQf+2qwVA==
 
 fastq@^1.6.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.10.0.tgz#74dbefccade964932cdf500473ef302719c652bb"
-  integrity sha512-NL2Qc5L3iQEsyYzweq7qfgy5OtXCmGzGvhElGEd/SoFWEMOEczNh5s5ocaF01HDetxz+p8ecjNPA6cZxxIHmzA==
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.10.1.tgz#8b8f2ac8bf3632d67afcd65dac248d5fdc45385e"
+  integrity sha512-AWuv6Ery3pM+dY7LYS8YIaCiQvUaos9OB1RyNgaOWnaX+Tik7Onvcsf8x8c+YtDeT0maYLniBip2hox5KtEXXA==
   dependencies:
     reusify "^1.0.4"
 
@@ -8267,9 +8267,9 @@ hosted-git-info@^2.1.4:
   integrity sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
 
 hosted-git-info@^3.0.6:
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-3.0.7.tgz#a30727385ea85acfcee94e0aad9e368c792e036c"
-  integrity sha512-fWqc0IcuXs+BmE9orLDyVykAG9GJtGLGuZAAqgcckPgv5xad4AcXGIv8galtQvlwutxSlaMcdw7BUtq2EIvqCQ==
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-3.0.8.tgz#6e35d4cc87af2c5f816e4cb9ce350ba87a3f370d"
+  integrity sha512-aXpmwoOhRBrw6X3j0h5RloK4x1OzsxMPyxqIHyNfSe2pypkVTZFpEiRoSipPEPlMrh0HW/XsjkJ5WgnCirpNUw==
   dependencies:
     lru-cache "^6.0.0"
 
@@ -9867,10 +9867,10 @@ keyv@^3.0.0:
   dependencies:
     json-buffer "3.0.0"
 
-keyvaluestorage@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/keyvaluestorage/-/keyvaluestorage-0.6.0.tgz#8ec60592741fca865ff6ff797c0d696c7315f8f5"
-  integrity sha512-27+JPFNTkGPTgckVEk7PAXVlFcODbyXVZQjR1Q7RBWC8rDXjBbBbP3HC9itpmHY9naxf8w7hanM3hUecQmAsQA==
+keyvaluestorage@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/keyvaluestorage/-/keyvaluestorage-0.7.0.tgz#d86cebc705dc742926b4e8b40656e0589cc16b37"
+  integrity sha512-dkyyQ4d7E/Xur2Eu+p/dIUskLhCYQVJZ8kOjqNWvfTmLhRwn2q8w93grd439ofJWIGimvAi+RBUTIxnUye5IMw==
   dependencies:
     better-sqlite3 "^7.1.2"
     localStorage "^1.0.4"
@@ -13399,7 +13399,7 @@ rgba-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/rgba-regex/-/rgba-regex-1.0.0.tgz#43374e2e2ca0968b0ef1523460b7d730ff22eeb3"
   integrity sha1-QzdOLiyglosO8VI0YLfXMP8i7rM=
 
-rimraf@^2.5.4, rimraf@^2.6.3, rimraf@^2.7.1:
+rimraf@^2.5.4, rimraf@^2.6.3:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.7.1.tgz#35797f13a7fdadc566142c29d4f07ccad483e3ec"
   integrity sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
