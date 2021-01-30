@@ -33,36 +33,6 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
-    pid: 3,
-    lpSymbol: 'PIZZA-CHS LP',
-    lpAddresses: {
-      97: '',
-      56: '0x1E90d3C88A3E830983b70E6EF9799Ff1c0deCE62',
-    },
-    tokenSymbol: 'PIZZA',
-    tokenAddresses: {
-      97: '',
-      56: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
-    },
-    quoteTokenSymbol: QuoteToken.CHS,
-    quoteTokenAdresses: contracts.chs,
-  },
-  {
-    pid: 4,
-    lpSymbol: 'CHS-BNB LP',
-    lpAddresses: {
-      97: '',
-      56: '0x51A162dd678d75C269Ef6680193C019e0B4Bda7E',
-    },
-    tokenSymbol: 'CHS',
-    tokenAddresses: {
-      97: '',
-      56: '0xaDD8A06fd58761A5047426e160B2B88AD3B9D464',
-    },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
-  },
-  {
     pid: 2,
     lpSymbol: 'PIZZA-BUSD LP',
     lpAddresses: {
@@ -79,6 +49,51 @@ const farms: FarmConfig[] = [
     isCommunity: false,
   },
   {
+    pid: 3,
+    lpSymbol: 'PIZZA-CHS LP',
+    lpAddresses: {
+      97: '',
+      56: '0x1E90d3C88A3E830983b70E6EF9799Ff1c0deCE62',
+    },
+    tokenSymbol: 'PIZZA',
+    tokenAddresses: {
+      97: '',
+      56: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
+    },
+    quoteTokenSymbol: QuoteToken.CHS,
+    quoteTokenAdresses: contracts.chs,
+  },
+  {
+    pid: 7,
+    lpSymbol: 'ETH-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x7d1a03b432c5f04A426F4Eaf41037fe8Dd695b89',
+    },
+    tokenSymbol: 'ETH',
+    tokenAddresses: {
+      97: '',
+      56: '0x2170Ed0880ac9A755fd29B2688956BD959F933F8',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 4,
+    lpSymbol: 'CHS-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x51A162dd678d75C269Ef6680193C019e0B4Bda7E',
+    },
+    tokenSymbol: 'CHS',
+    tokenAddresses: {
+      97: '',
+      56: '0xaDD8A06fd58761A5047426e160B2B88AD3B9D464',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+   {
     pid: 5,
     lpSymbol: 'BNB-BUSD LP',
     lpAddresses: {
