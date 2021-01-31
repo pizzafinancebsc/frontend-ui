@@ -19,7 +19,7 @@ const pools: PoolConfig[] = [
     tokenDecimals: 18,
   },
   {
-   sousId: 1,
+   pastaId: 1,
    tokenName: 'CHS',
    stakingTokenName: QuoteToken.PIZZA,
    stakingTokenAddress: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',    //
