@@ -28,6 +28,9 @@ export enum QuoteToken {
   'KP3RB' = 'KP3RB',
   'PASTA' = 'PASTA',
   'USDT' = 'USDT',
+  'DAI' = 'DAI',
+  'ETH' = 'ETH',
+  'USDC' = 'USDC',
 }
 
 export enum PoolCategory {
