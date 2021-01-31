@@ -13,7 +13,7 @@ const pools: PoolConfig[] = [
     poolCategory: PoolCategory.CORE,
     projectLink: 'http://pizzafinance.app/',
     harvest: true,
-    tokenPerBlock: '0.0015',
+    tokenPerBlock: '0.005',
     sortOrder: 1,
     isFinished: false,
     tokenDecimals: 18,
@@ -35,6 +35,40 @@ const pools: PoolConfig[] = [
    isFinished: false,
    tokenDecimals: 18,
  },
+ {
+  pastaId: 2,
+  tokenName: 'KP3RB',
+  stakingTokenName: QuoteToken.PIZZA,
+  stakingTokenAddress: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',    //
+  contractAddress: {
+    97: '',
+    56: '0x65932e719B1108516B5d0A5cFdB6508A1268cAc2',
+  },
+  poolCategory: PoolCategory.CORE,
+  projectLink: 'https://keep3rb.network/',
+  harvest: true,
+  tokenPerBlock: '0.001',
+  sortOrder: 999,
+  isFinished: false,
+  tokenDecimals: 18,
+},
+{
+ pastaId: 3,
+ tokenName: 'HOTS',
+ stakingTokenName: QuoteToken.PIZZA,
+ stakingTokenAddress: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',    //
+ contractAddress: {
+   97: '',
+   56: '0x7cAA197cdc8c6b878d5a44b3D0bcdFc7cc6AA66c',
+ },
+ poolCategory: PoolCategory.CORE,
+ projectLink: 'https://hotdog.cafe/',
+ harvest: true,
+ tokenPerBlock: '0.05',
+ sortOrder: 999,
+ isFinished: false,
+ tokenDecimals: 18,
+},
 ]
 
 export default pools
