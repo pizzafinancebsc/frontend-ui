@@ -4,6 +4,7 @@ const pools: PoolConfig[] = [
   {
     pastaId: 0,
     tokenName: 'PIZZA',
+    earnToken: 'PIZZA',
     stakingTokenName: QuoteToken.PIZZA,
     stakingTokenAddress: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
     contractAddress: {
@@ -21,6 +22,7 @@ const pools: PoolConfig[] = [
  {
  pastaId: 5,
  tokenName: 'HOTS',
+ earnToken: 'HOTS',
  stakingTokenName: QuoteToken.PIZZA,
  stakingTokenAddress: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',    //
  contractAddress: {
@@ -37,7 +39,8 @@ const pools: PoolConfig[] = [
 },
 {
  pastaId: 3,
- tokenName: 'PIZZA',
+ tokenName: 'KP3RB',
+ earnToken: 'PIZZA',
  stakingTokenName: QuoteToken.KP3RB,
  stakingTokenAddress: '0x5EA29eEe799aA7cC379FdE5cf370BC24f2Ea7c81',    //
  contractAddress: {
@@ -54,7 +57,8 @@ const pools: PoolConfig[] = [
 },
 {
  pastaId: 4,
- tokenName: 'PIZZA',
+ tokenName: 'CHS',
+ earnToken: 'PIZZA',
  stakingTokenName: QuoteToken.CHS,
  stakingTokenAddress: '0xaDD8A06fd58761A5047426e160B2B88AD3B9D464',    //
  contractAddress: {
@@ -62,7 +66,7 @@ const pools: PoolConfig[] = [
    56: '0x50256622Ed594239AFAf7D6aaC2A852aDfBD741c',
  },
  poolCategory: PoolCategory.CORE,
- projectLink: 'https://hotdog.cafe/',
+ projectLink: 'https://cheeseswap.app/',
  harvest: true,
  tokenPerBlock: '0.0001',
  sortOrder: 3,
@@ -72,6 +76,7 @@ const pools: PoolConfig[] = [
 {
  pastaId: 1,
  tokenName: 'CHS',
+ earnToken: 'CHS',
  stakingTokenName: QuoteToken.PIZZA,
  stakingTokenAddress: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',    //
  contractAddress: {
@@ -89,6 +94,7 @@ const pools: PoolConfig[] = [
 {
 pastaId: 2,
 tokenName: 'KP3RB',
+earnToken: 'KP3RB',
 stakingTokenName: QuoteToken.PIZZA,
 stakingTokenAddress: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',    //
 contractAddress: {

@@ -65,6 +65,7 @@ export interface PoolConfig {
   pastaId: number
   image?: string
   tokenName: string
+  earnToken: string
   stakingTokenName: QuoteToken
   stakingLimit?: number
   stakingTokenAddress?: string

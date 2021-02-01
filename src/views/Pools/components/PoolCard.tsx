@@ -38,6 +38,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
     pastaId,
     image,
     tokenName,
+    earnToken,
     stakingTokenName,
     stakingTokenAddress,
     projectLink,
@@ -145,7 +146,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
         ) : (
           <OldPastaTitle hasBalance={accountHasStakedBalance} />
         )}
-        <Label isFinished={isFinished && pastaId !== 0} text={TranslateString(330, `${tokenName} earned`)} />
+        <Label isFinished={isFinished && pastaId !== 0} text={TranslateString(330, `${earnToken} earned`)} />
         <StyledCardActions>
           {!account && <UnlockButton />}
           {account &&
