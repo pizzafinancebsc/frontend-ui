@@ -51,7 +51,7 @@ const Farms: React.FC = () => {
 
         let apy = pizzaPriceVsBNB.times(pizzaRewardPerYear).div(farm.lpTotalInQuoteToken)
 
-        if (farm.quoteTokenSymbol === QuoteToken.BUSD || farm.quoteTokenSymbol === QuoteToken.USDT) {
+        if (farm.quoteTokenSymbol === QuoteToken.BUSD || farm.quoteTokenSymbol === QuoteToken.BNB || farm.quoteTokenSymbol === QuoteToken.USDT) {
           apy = pizzaPriceVsBNB.times(pizzaRewardPerYear).div(farm.lpTotalInQuoteToken).times(bnbPrice)
         } else if (farm.quoteTokenSymbol === QuoteToken.PIZZA) {
           apy = pizzaRewardPerYear.div(farm.lpTotalInQuoteToken)

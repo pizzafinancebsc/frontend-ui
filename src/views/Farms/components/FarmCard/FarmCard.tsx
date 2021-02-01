@@ -112,11 +112,11 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, pizzaPrice, bnbPrice
     return farm.lpTotalInQuoteToken
   }, [bnbPrice, pizzaPrice, farm.lpTotalInQuoteToken, farm.quoteTokenSymbol])
 
-  const totalValueFormated = totalValue
-    ? `$${Number(totalValue).toLocaleString(undefined, { maximumFractionDigits: 0 })}`
-    : '-'
+//  const totalValueFormated = totalValue
+//    ? `$${Number(totalValue).toLocaleString(undefined, { maximumFractionDigits: 0 })}`
+//    : '-'
 
-  const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PIZZANANCE', '')
+  const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PIZZAFINANCE', '')
   const earnLabel = farm.dual ? farm.dual.earnLabel : 'PIZZA'
   const farmAPY = farm.apy && farm.apy.times(new BigNumber(100)).toNumber().toLocaleString('en-US').slice(0, -1)
 
@@ -152,7 +152,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, pizzaPrice, bnbPrice
         <DetailsSection
           removed={removed}
           bscScanAddress={`https://bscscan.com/address/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`}
-          totalValueFormated={totalValueFormated}
+//          totalValueFormated={totalValueFormated}
           lpLabel={lpLabel}
           quoteTokenAdresses={quoteTokenAdresses}
           quoteTokenSymbol={quoteTokenSymbol}

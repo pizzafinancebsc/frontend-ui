@@ -11,7 +11,7 @@ export interface TokenAddressesObject {
 export interface ExpandableSectionProps {
   bscScanAddress?: string
   removed?: boolean
-  totalValueFormated?: string
+//  totalValueFormated?: string
   lpLabel?: string
   quoteTokenAdresses?: TokenAddressesObject
   quoteTokenSymbol?: string
@@ -40,7 +40,7 @@ const StyledLinkExternal = styled(LinkExternal)`
 const DetailsSection: React.FC<ExpandableSectionProps> = ({
   bscScanAddress,
   removed,
-  totalValueFormated,
+//  totalValueFormated,
   lpLabel,
   quoteTokenAdresses,
   quoteTokenSymbol,
@@ -57,12 +57,12 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
           {lpLabel}
         </StyledLinkExternal>
       </Flex>
-      {!removed && (
+{/*      {!removed && (
         <Flex justifyContent="space-between">
           <Text>{TranslateString(23, 'Total Liquidity')}:</Text>
           <Text>{totalValueFormated}</Text>
         </Flex>
-      )}
+      )} */}
       <Flex justifyContent="flex-start">
         <Link external href={bscScanAddress} bold={false}>
           {TranslateString(356, 'View on BscScan')}
