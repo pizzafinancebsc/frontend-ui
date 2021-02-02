@@ -1782,9 +1782,11 @@
     chalk "^4.0.0"
 
 "@json-rpc-tools/types@^1.5.7":
-  version "1.5.12"
-  resolved "https://registry.yarnpkg.com/@json-rpc-tools/types/-/types-1.5.12.tgz#4cf8b86bcdda4c402d92c447bcac3c44d96a1141"
-  integrity sha512-9op4dm+o7JapFxPkfPfPIaMA5nbWp5F7pmGfVq5PhHHRCRTxM2fpzzU1qqtf3oNqPVQ4c1lAfc+f6PgxIyYg6Q==
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@json-rpc-tools/types/-/types-1.6.1.tgz#b892599c31fb1cd62172b86fb38d0bfcbd52fe30"
+  integrity sha512-Fg8Dke0+K92cZaWm0/vFIZgNdHftEI5GXbgT2rwUmmo/GrjlXJn5cPRghq5ee+QGTeZvWcjYmqdwrdGbTGBCMw==
+  dependencies:
+    keyvaluestorage-interface "^1.0.0"
 
 "@json-rpc-tools/utils@1.5.7":
   version "1.5.7"
@@ -9775,6 +9777,11 @@ keyv@^3.0.0:
   dependencies:
     json-buffer "3.0.0"
 
+keyvaluestorage-interface@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/keyvaluestorage-interface/-/keyvaluestorage-interface-1.0.0.tgz#13ebdf71f5284ad54be94bd1ad9ed79adad515ff"
+  integrity sha512-8t6Q3TclQ4uZynJY9IGr2+SsIGwK9JHcO6ootkHCGA0CrQCRy+VkouYNO2xicET6b9al7QKzpebNow+gkpCL8g==
+
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/killable/-/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"
@@ -16054,9 +16061,9 @@ ws@^6.2.1:
     async-limiter "~1.0.0"
 
 ws@^7.2.3:
-  version "7.4.2"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.2.tgz#782100048e54eb36fe9843363ab1c68672b261dd"
-  integrity sha512-T4tewALS3+qsrpGI/8dqNMLIVdq/g/85U98HPMa6F0m6xTbvhXU6RCQLqPH3+SlomNV/LdY6RXEbBpMH6EOJnA==
+  version "7.4.3"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.3.tgz#1f9643de34a543b8edb124bdcbc457ae55a6e5cd"
+  integrity sha512-hr6vCR76GsossIRsr8OLR9acVVm1jyfEWvhbNjtgPOrfvAlKzvyeg/P6r8RuDjRyrcQoPQT7K0DGEPc7Ae6jzA==
 
 xhr-request-promise@^0.1.2:
   version "0.1.3"
