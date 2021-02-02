@@ -7,6 +7,9 @@ import PizzaStats from './components/PizzaStats'
 import FarmStakingCard from './components/FarmStakingCard'
 import LotteryCard from './components/LotteryCard'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
+import EarnAPYCard from './components/EarnAPYCard'
+import EarnAssetCard from './components/EarnAssetCard'
+import WinCard from './components/WinCard'
 
 const Hero = styled.div`
   align-items: center;
@@ -52,6 +55,27 @@ const Cards = styled(BaseLayout)`
   }
 `
 
+const CTACards = styled(BaseLayout)`
+  align-items: start;
+  margin-bottom: 32px;
+
+  & > div {
+    grid-column: span 6;
+  }
+
+  ${({ theme }) => theme.mediaQueries.sm} {
+    & > div {
+      grid-column: span 8;
+    }
+  }
+
+  ${({ theme }) => theme.mediaQueries.lg} {
+    & > div {
+      grid-column: span 4;
+    }
+  }
+`
+
 const Home: React.FC = () => {
   const TranslateString = useI18n()
 
@@ -64,12 +88,19 @@ const Home: React.FC = () => {
         <Text>{TranslateString(578, 'The Best Modern Yield Farm on Binance Smart Chain.')}</Text>
       </Hero>
       <div>
-        <Cards>
-          <FarmStakingCard />
-          <LotteryCard />
-          <PizzaStats />
-          <TotalValueLockedCard />
-        </Cards>
+      <Cards>
+        <FarmStakingCard />
+        <LotteryCard />
+      </Cards>
+      <CTACards>
+        <EarnAPYCard />
+        <EarnAssetCard />
+        <WinCard />
+      </CTACards>
+      <Cards>
+        <PizzaStats />
+        <TotalValueLockedCard />
+      </Cards>
       </div>
     </Page>
   )

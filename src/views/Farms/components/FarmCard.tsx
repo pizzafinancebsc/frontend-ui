@@ -137,9 +137,9 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed }) => {
     return farm.lpTotalInQuoteToken
   }, [bnbPrice, pizzaPrice, farm.lpTotalInQuoteToken, farm.quoteTokenSymbol])
 
-//  const totalValueFormated = totalValue
-//    ? `$${Number(totalValue).toLocaleString(undefined, { maximumFractionDigits: 0 })}`
-//    : '-'
+  const totalValueFormated = totalValue
+    ? `$${Number(totalValue).toLocaleString(undefined, { maximumFractionDigits: 0 })}`
+    : '-'
 
   return (
     <FCard>
@@ -180,12 +180,12 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed }) => {
           <UnlockButton fullWidth />
         )}
       </Action>
-{/**     {!removed && (
+     {!removed && (
         <Label>
           <span>{TranslateString(23, 'Total Liquidity')}</span>
           <span className="right">{totalValueFormated}</span>
         </Label>
-      )} **/}
+      )}
       <ViewMore>
         <Link
           href={`https://bscscan.com/address/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`}

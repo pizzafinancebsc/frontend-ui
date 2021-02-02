@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react'
 import BigNumber from 'bignumber.js'
 import styled, { keyframes } from 'styled-components'
-import { Flex, Text } from '@pizzafinance/ui-sdk'
+import { Flex, Text, Skeleton } from '@pizzafinance/ui-sdk'
 import { communityFarms } from 'config/constants'
 import { Farm } from 'state/types'
 import { provider } from 'web3-core'
@@ -11,6 +11,7 @@ import { QuoteToken } from 'config/constants/types'
 import DetailsSection from './DetailsSection'
 import CardHeading from './CardHeading'
 import CardActionsContainer from './CardActionsContainer'
+import ApyButton from './ApyButton'
 
 export interface FarmWithStakedValue extends Farm {
   apy?: BigNumber
@@ -112,9 +113,9 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, pizzaPrice, bnbPrice
     return farm.lpTotalInQuoteToken
   }, [bnbPrice, pizzaPrice, farm.lpTotalInQuoteToken, farm.quoteTokenSymbol])
 
-//  const totalValueFormated = totalValue
-//    ? `$${Number(totalValue).toLocaleString(undefined, { maximumFractionDigits: 0 })}`
-//    : '-'
+  const totalValueFormated = totalValue
+    ? `$${Number(totalValue).toLocaleString(undefined, { maximumFractionDigits: 0 })}`
+    : '-'
 
   const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PIZZAFINANCE', '')
   const earnLabel = farm.dual ? farm.dual.earnLabel : 'PIZZA'
@@ -133,9 +134,25 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, pizzaPrice, bnbPrice
         tokenSymbol={farm.tokenSymbol}
       />
       {!removed && (
-        <Flex justifyContent="space-between">
-          <Text>{TranslateString(352, 'APY')}:</Text>
-          <Text bold>{farm.apy ? `${farmAPY}%` : 'Loading ...'}</Text>
+        <Flex justifyContent="space-between" alignItems="center">
+          <Text>{TranslateString(352, 'APR')}:</Text>
+          <Text bold style={{ display: 'flex', alignItems: 'center' }}>
+            {farm.apy ? (
+              <>
+                <ApyButton
+                  lpLabel={lpLabel}
+                  quoteTokenAdresses={quoteTokenAdresses}
+                  quoteTokenSymbol={quoteTokenSymbol}
+                  tokenAddresses={tokenAddresses}
+                  pizzaPrice={pizzaPrice}
+                  apy={farm.apy}
+                />
+                {farmAPY}%
+              </>
+            ) : (
+              <Skeleton height={24} width={80} />
+            )}
+          </Text>
         </Flex>
       )}
       <Flex justifyContent="space-between">
@@ -152,7 +169,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, pizzaPrice, bnbPrice
         <DetailsSection
           removed={removed}
           bscScanAddress={`https://bscscan.com/address/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`}
-//          totalValueFormated={totalValueFormated}
+          totalValueFormated={totalValueFormated}
           lpLabel={lpLabel}
           quoteTokenAdresses={quoteTokenAdresses}
           quoteTokenSymbol={quoteTokenSymbol}

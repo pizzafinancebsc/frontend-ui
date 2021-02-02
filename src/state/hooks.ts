@@ -67,13 +67,13 @@ export const usePoolFromPid = (pastaId): Pool => {
 // Prices
 
 export const usePriceBnbBusd = (): BigNumber => {
-  const pid = 5 // BUSD-BNB LP
+  const pid = 6 // BUSD-BNB LP
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(1).div(farm.tokenPriceVsQuote) : ZERO
 }
 
 export const usePricePizzaBusd = (): BigNumber => {
-  const pid = 1// PIZZA-BNB LP
+  const pid = 1 // PIZZA-BNB LP
   const bnbPriceUSD = usePriceBnbBusd()
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
