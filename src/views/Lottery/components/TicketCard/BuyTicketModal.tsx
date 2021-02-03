@@ -55,8 +55,8 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
   }, [onMultiBuy, setRequestedBuy, maxNumber, val])
 
   const handleSelectMax = useCallback(() => {
-    if (Number(maxTickets) > 100) {
-      setVal('100')
+    if (Number(maxTickets) > 50) {
+      setVal('50')
     } else {
       setVal(maxTickets.toString())
     }
