@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Card, CardBody, Heading, Skeleton, Text, Link } from '@pizzafinance/ui-sdk'
+import { Card, CardBody, Heading, Link } from '@pizzafinance/ui-sdk'
 import useI18n from 'hooks/useI18n'
 // import { useGetStats } from 'hooks/api'
 
