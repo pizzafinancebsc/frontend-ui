@@ -38,7 +38,7 @@ const HowItWorks = () => {
           'Spend PIZZA to buy tickets, contributing to the lottery pot. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their exact order!',
         )}
       </Text>
-      <StyledLink href="https://docs.pizzafinance.app/lottery-1">Read more</StyledLink>
+      <StyledLink href="https://pizzafinance.app/">Read more</StyledLink>
     </LayoutWrapper>
   )
 }
