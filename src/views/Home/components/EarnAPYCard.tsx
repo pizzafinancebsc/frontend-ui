@@ -82,7 +82,7 @@ const EarnAPYCard = () => {
         </Heading>
         <CardMidContent color="#EF4E7B">
           {getHighestAPY() ? (
-            `${getHighestAPY()}% ${TranslateString(736, 'APR')}`
+            `${getHighestAPY()}% ${TranslateString(736, 'APY')}`
           ) : (
             <Skeleton animation="pulse" variant="rect" height="44px" />
           )}
