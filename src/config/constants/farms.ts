@@ -92,7 +92,7 @@ const farms: FarmConfig[] = [
    97: '',
    56: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
  },
- quoteTokenSymbol: QuoteToken.dai,
+ quoteTokenSymbol: QuoteToken.DAI,
  quoteTokenAdresses: contracts.dai,
  isCommunity: false,
 },

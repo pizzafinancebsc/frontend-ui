@@ -31,7 +31,7 @@ export enum QuoteToken {
   'DAI' = 'DAI',
   'ETH' = 'ETH',
   'USDC' = 'USDC',
-  'CAKe' = 'CAKE',
+  'CAKE' = 'CAKE',
 }
 
 export enum PoolCategory {
