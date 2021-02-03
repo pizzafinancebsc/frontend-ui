@@ -63,7 +63,7 @@ const ComingSoon = () => {
               )}
             </Text>
             <Text mb={3}>
-              <LiquidityLink href="https://swap.pizzafinance.app/#/add/ETH/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82">
+              <LiquidityLink href="https://cheeseswap.app/#/add/ETH/0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB">
                 {TranslateString(506, 'Get PIZZA-BNB LP >')}
               </LiquidityLink>
             </Text>
@@ -73,7 +73,7 @@ const ComingSoon = () => {
               <strong>{TranslateString(510, 'You get the tokens.')}</strong>
             </Text>
           </Block>
-          <MobileImage src="/images/ifo-bunny.svg" alt="ifo bunny" />
+          <MobileImage src="/images/ifo-shop.svg" alt="ifo shop" />
           <Block>
             <Title as="h2">{TranslateString(512, 'Want to launch your own IFO?')}</Title>
             <Text mb={3}>
@@ -84,7 +84,7 @@ const ComingSoon = () => {
             </Text>
             <Button
               as="a"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScGdT5rrVMr4WOWr08pvcroSeuIOtEJf1sVdQGVdcAOqryigQ/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfQxi51mWTkB5bdH8_op_xFVpZMBMTM5HqswZRI2xLXtT5FsA/viewform"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -93,7 +93,7 @@ const ComingSoon = () => {
           </Block>
         </div>
         <div>
-          <MainImage src="/images/ifo-bunny.svg" alt="ifo bunny" />
+          <MainImage src="/images/ifo-shop.svg" alt="ifo shop" />
         </div>
       </Content>
     </Page>

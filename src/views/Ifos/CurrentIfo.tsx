@@ -52,7 +52,7 @@ const Ifo = () => {
             <li>{TranslateString(598, 'Get PIZZA-BNB LP tokens by adding PIZZA and BNB liquidity')}</li>
           </List>
           <Flex mb="16px">
-            <LinkExternal href="https://swap.pizzafinance.app/#/swap" mr="16px">
+            <LinkExternal href="https://cheeseswap.app/#/swap?inputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&outputCurrency=0x2cc26dd730f548dc4ac291ae7d84a0c96980d2cb" mr="16px">
               {TranslateString(999, 'Buy Pizza')}
             </LinkExternal>
             <LinkExternal href="https://swap.pizzafinance.app/#/add/ETH/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82">
@@ -72,14 +72,14 @@ const Ifo = () => {
             <Button
               as="a"
               variant="secondary"
-              href="https://docs.swap.pizzafinance.app/core-products/ifo-initial-farm-offering"
+              href="https://pizzafinance.app/"
             >
               {TranslateString(610, 'Read more')}
             </Button>
           </Text>
         </div>
         <div>
-          <Image src="/images/ifo-bunny.svg" alt="ifo bunny" width={436} height={406} responsive />
+          <Image src="/images/ifo-shop.svg" alt="ifo shop" width={436} height={406} responsive />
           <div>
             <Title as="h2">{TranslateString(512, 'Want to launch your own IFO?')}</Title>
             <Text mb={3}>
