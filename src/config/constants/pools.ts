@@ -31,10 +31,10 @@ const pools: PoolConfig[] = [
  },
  poolCategory: PoolCategory.CORE,
  projectLink: 'https://hotdog.cafe/',
- harvest: true,
+ harvest: false,
  tokenPerBlock: '0.05',
  sortOrder: 4,
- isFinished: false,
+ isFinished: true,
  tokenDecimals: 18,
 },
 {
