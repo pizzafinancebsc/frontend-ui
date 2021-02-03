@@ -15,7 +15,7 @@ interface DepositModalProps {
   earnToken?: string
 }
 
-const CompoundModal: React.FC<DepositModalProps> = ({ earnings, onConfirm, onDismiss, tokenName, earnToken = '' }) => {
+const CompoundModal: React.FC<DepositModalProps> = ({ earnings, onConfirm, onDismiss, earnToken = '' }) => {
   const [pendingTx, setPendingTx] = useState(false)
   const TranslateString = useI18n()
   const fullBalance = useMemo(() => {

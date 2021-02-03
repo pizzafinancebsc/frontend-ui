@@ -25,7 +25,7 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
   }, [max])
 
   const maxTickets = useMemo(() => {
-    return parseInt(getFullDisplayBalance(max.div(new BigNumber(0.1))))
+    return parseInt(getFullDisplayBalance(max.div(new BigNumber(10))))
   }, [max])
 
   const handleChange = (e: React.FormEvent<HTMLInputElement>) => setVal(e.currentTarget.value)
@@ -55,8 +55,8 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
   }, [onMultiBuy, setRequestedBuy, maxNumber, val])
 
   const handleSelectMax = useCallback(() => {
-    if (Number(maxTickets) > 50) {
-      setVal('50')
+    if (Number(maxTickets) > 100) {
+      setVal('100')
     } else {
       setVal(maxTickets.toString())
     }
@@ -72,7 +72,7 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
         onSelectMax={handleSelectMax}
         onChange={handleChange}
         max={fullBalance}
-        symbol="TICKET"
+        symbol="PSLT Ticket"
         availableSymbol="PIZZA"
       />
       <div>
