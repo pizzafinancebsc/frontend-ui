@@ -25,38 +25,38 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
   }, [max])
 
   const maxTickets = useMemo(() => {
-    return parseInt(getFullDisplayBalance(max.div(new BigNumber(10))))
-  }, [max])
+     return parseInt(getFullDisplayBalance(max.div(new BigNumber(0.1))))
+   }, [max])
 
-  const handleChange = (e: React.FormEvent<HTMLInputElement>) => setVal(e.currentTarget.value)
+   const handleChange = (e: React.FormEvent<HTMLInputElement>) => setVal(e.currentTarget.value)
 
-  const { onMultiBuy } = useMultiBuyLottery()
-  const maxNumber = useMaxNumber()
-  const handleBuy = useCallback(async () => {
-    try {
-      setRequestedBuy(true)
-      const length = parseInt(val)
-      // @ts-ignore
-      // eslint-disable-next-line prefer-spread
-      const numbers = Array.apply(null, { length }).map(() => [
-        Math.floor(Math.random() * maxNumber) + 1,
-        Math.floor(Math.random() * maxNumber) + 1,
-        Math.floor(Math.random() * maxNumber) + 1,
-        Math.floor(Math.random() * maxNumber) + 1,
-      ])
-      const txHash = await onMultiBuy('0.1', numbers)
-      // user rejected tx or didn't go thru
-      if (txHash) {
-        setRequestedBuy(false)
-      }
-    } catch (e) {
-      console.error(e)
-    }
-  }, [onMultiBuy, setRequestedBuy, maxNumber, val])
+   const { onMultiBuy } = useMultiBuyLottery()
+   const maxNumber = useMaxNumber()
+   const handleBuy = useCallback(async () => {
+     try {
+       setRequestedBuy(true)
+       const length = parseInt(val)
+       // @ts-ignore
+       // eslint-disable-next-line prefer-spread
+       const numbers = Array.apply(null, { length }).map(() => [
+         Math.floor(Math.random() * maxNumber) + 1,
+         Math.floor(Math.random() * maxNumber) + 1,
+         Math.floor(Math.random() * maxNumber) + 1,
+         Math.floor(Math.random() * maxNumber) + 1,
+       ])
+       const txHash = await onMultiBuy('0.1', numbers)
+       // user rejected tx or didn't go thru
+       if (txHash) {
+         setRequestedBuy(false)
+       }
+     } catch (e) {
+       console.error(e)
+     }
+   }, [onMultiBuy, setRequestedBuy, maxNumber, val])
 
   const handleSelectMax = useCallback(() => {
-    if (Number(maxTickets) > 50) {
-      setVal('50')
+    if (Number(maxTickets) > 100) {
+      setVal('100')
     } else {
       setVal(maxTickets.toString())
     }
