@@ -64,6 +64,38 @@ const farms: FarmConfig[] = [
    quoteTokenAdresses: contracts.usdt,
    isCommunity: false,
  },
+ {
+  pid: 13,
+  lpSymbol: 'PIZZA-USDC LP',
+  lpAddresses: {
+    97: '',
+    56: '0x36DCBA6A7b5769Acf74cEA7f58564EF1B44362C1',
+  },
+  tokenSymbol: 'PIZZA',
+  tokenAddresses: {
+    97: '',
+    56: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
+  },
+  quoteTokenSymbol: QuoteToken.USDC,
+  quoteTokenAdresses: contracts.usdc,
+  isCommunity: false,
+},
+{
+ pid: 14,
+ lpSymbol: 'PIZZA-DAI LP',
+ lpAddresses: {
+   97: '',
+   56: '0xC928dd5D540971e322372EB13bb9003759862faE',
+ },
+ tokenSymbol: 'PIZZA',
+ tokenAddresses: {
+   97: '',
+   56: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
+ },
+ quoteTokenSymbol: QuoteToken.dai,
+ quoteTokenAdresses: contracts.dai,
+ isCommunity: false,
+},
   {
     pid: 3,
     lpSymbol: 'PIZZA-CHS LP',
