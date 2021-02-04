@@ -79,6 +79,8 @@ const Farm: React.FC = () => {
             <li>{TranslateString(580, 'Stake PIZZA to earn PASTA or any listed NEW tokens.')}</li>
             <li>{TranslateString(404, 'You can unstake at any time.')}</li>
             <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
+            <li>{TranslateString(406, '-----------------------------------------------------')}</li>
+            <li>{TranslateString(406, 'CAUTION!: STAKING POOLS CALCULATED "APY" DATA IS REAL TIME AND AUTOMATICALLY COLLECTED FROM BLOCKCHAIN. DATA MAY NOT ACCURATE.')}</li>
           </ul>
         </div>
         <img src="/images/pasta-space.svg" alt="PASTA POOL icon" width={250} height={191} />
