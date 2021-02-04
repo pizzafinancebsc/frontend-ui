@@ -17,6 +17,7 @@ const tags = {
 interface Props {
   projectLink: string
   totalStaked: BigNumber
+  tokenName: string
   blocksRemaining: number
   isFinished: boolean
   blocksUntilStart: number
@@ -75,6 +76,7 @@ const TokenLink = styled.a`
 const CardFooter: React.FC<Props> = ({
   projectLink,
   totalStaked,
+  tokenName,
   blocksRemaining,
   isFinished,
   blocksUntilStart,
@@ -103,9 +105,9 @@ const CardFooter: React.FC<Props> = ({
             <FlexFull>
               <Label>
                 <span role="img" aria-label="pasta">
-                  🍕{' '}
+                  {' '}
                 </span>
-                {TranslateString(408, 'Total')}
+                {TranslateString(408, 'Total Stake of')} {tokenName}:
               </Label>
             </FlexFull>
             <Balance fontSize="14px" isDisabled={isFinished} value={getBalanceNumber(totalStaked)} />
@@ -121,7 +123,7 @@ const CardFooter: React.FC<Props> = ({
           {blocksUntilStart === 0 && blocksRemaining > 0 && (
             <Row>
               <FlexFull>
-                <Label>{TranslateString(410, 'End')}:</Label>
+                <Label>{TranslateString(410, 'End Block of Stake')}:</Label>
               </FlexFull>
               <Balance fontSize="14px" isDisabled={isFinished} value={blocksRemaining} decimals={0} />
             </Row>

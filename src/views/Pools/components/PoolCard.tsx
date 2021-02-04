@@ -192,7 +192,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
         <StyledDetails>
           <div style={{ flex: 1 }}>
             <span role="img" aria-label={stakingTokenName}>
-              🍕{' '}
+               {' '}
             </span>
             {TranslateString(384, 'Your Stake')}:
           </div>
@@ -202,6 +202,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
       <CardFooter
         projectLink={projectLink}
         totalStaked={totalStaked}
+        tokenName={tokenName}
         blocksRemaining={blocksRemaining}
         isFinished={isFinished}
         blocksUntilStart={blocksUntilStart}
