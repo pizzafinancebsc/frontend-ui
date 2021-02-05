@@ -36,10 +36,15 @@ const PizzaStats = () => {
           <Text fontSize="14px">{TranslateString(536, 'Total PIZZA Supply')}</Text>
           {pizzaSupply && <CardValue fontSize="14px" value={pizzaSupply} />}
         </Row>
-        <Row>
+    {/*    <Row>
           <Text fontSize="14px">{TranslateString(538, 'Total PIZZA Burned')}</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} />
         </Row>
+        */}
+        <Row>
+             <Text fontSize="14px">{TranslateString(538, 'Total PIZZA Burned')}</Text>
+             <CardValue fontSize="14px" decimals={4} value={41.00} />
+       </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(540, 'New PIZZA/block')}</Text>
           <CardValue fontSize="14px" decimals={4} value={0.25} />
