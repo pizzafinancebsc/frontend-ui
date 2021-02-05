@@ -66,7 +66,7 @@ const FarmedStakingCard = () => {
     <StyledLotteryCard>
       <CardBody>
       <Heading size="xl" mb="24px">
-        {TranslateString(550, 'Lottery Round:ZERO')}
+        {TranslateString(550, 'PIZZA Lottery Desk')}
       </Heading>
       <CardImage src="/images/ticket.svg" alt="Pizza ticket logo" width={64} height={64} />
       <Block>
