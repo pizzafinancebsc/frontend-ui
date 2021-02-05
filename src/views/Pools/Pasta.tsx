@@ -70,15 +70,20 @@ const Farm: React.FC = () => {
       <Hero>
         <div>
           <Heading as="h1" size="xxl" mb="16px">
-            {TranslateString(282, 'PASTA Pool')}
+            {TranslateString(282, 'SMART Pool')}
           </Heading>
           <Heading as="h4" size="l" mb="14px">
             {TranslateString(282, 'PIZZA Smart Staking Pool')}
           </Heading>
           <ul>
-            <li>{TranslateString(580, 'Stake PIZZA to earn PASTA or any listed NEW tokens.')}</li>
-            <li>{TranslateString(404, 'You can unstake at any time.')}</li>
+            <li>{TranslateString(580, 'Stake PIZZA or supported tokens to earn')}</li>
+            <li>{TranslateString(580, 'Any listed NEW BEP20 tokens.')}</li>
+            <li>{TranslateString(404, 'You can unstake at any time..')}</li>
+            <li>{TranslateString(404, 'Please do HARVEST before unstake any amounts.')}</li>
+            <li>{TranslateString(580, 'Your full balance will be unstaked & will not get any rewards.')}</li>
             <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
+            <li>{TranslateString(406, '______________________________________________________________')}</li>
+            <li>{TranslateString(406, 'CAUTION!: STAKING POOLS CALCULATED "APY" DATA IS REAL TIME AND AUTOMATICALLY COLLECTED FROM BLOCKCHAIN. DATA MAY NOT ACCURATE.')}</li>
           </ul>
         </div>
         <img src="/images/pasta-space.svg" alt="PASTA POOL icon" width={250} height={191} />

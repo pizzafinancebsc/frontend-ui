@@ -90,6 +90,9 @@ const Farms: React.FC = () => {
       <Heading as="h1" size="lg" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
         {TranslateString(999, 'Stake Cheese-LP tokens to earn PIZZA')}
       </Heading>
+      <Heading as="h3" size="lg" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
+        {TranslateString(999, 'CAUTION!: FARMS CALCULATED "APY" DATA IS REAL TIME AND AUTOMATICALLY COLLECTED FROM BLOCKCHAIN. DATA MAY NOT ACCURATE.')}
+      </Heading>
       <FarmTabButtons />
       <div>
         <Divider />
