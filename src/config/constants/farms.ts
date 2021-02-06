@@ -127,6 +127,22 @@ const farms: FarmConfig[] = [
    quoteTokenAdresses: contracts.eth,
    isCommunity: false,
  },
+ {
+  pid: 16,
+  lpSymbol: 'BETH-PIZZA LP',
+  lpAddresses: {
+    97: '',
+    56: '0x8bd126bD0c09e74006f62aDc68F9c75048835aa0',
+  },
+  tokenSymbol: 'BETH',
+  tokenAddresses: {
+    97: '',
+    56: '0x250632378E573c6Be1AC2f97Fcdf00515d0Aa91B',
+  },
+  quoteTokenSymbol: QuoteToken.PIZZA,
+  quoteTokenAdresses: contracts.pizza,
+  isCommunity: false,
+},
   {
    pid: 5,
    lpSymbol: 'BNB-BUSD LP',
