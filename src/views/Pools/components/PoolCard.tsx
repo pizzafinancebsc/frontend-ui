@@ -6,13 +6,13 @@ import { useWallet } from '@binance-chain/bsc-use-wallet'
 import UnlockButton from 'components/UnlockButton'
 import Label from 'components/Label'
 import { useERC20 } from 'hooks/useContract'
-import { useSousApprove } from 'hooks/useApprove'
+import { usePastaApprove } from 'hooks/useApprove'
 import useI18n from 'hooks/useI18n'
-import { useSousStake } from 'hooks/useStake'
-import { useSousUnstake } from 'hooks/useUnstake'
+import { usePastaStake } from 'hooks/useStake'
+import { usePastaUnstake } from 'hooks/useUnstake'
 import useBlock from 'hooks/useBlock'
 import { getBalanceNumber } from 'utils/formatBalance'
-import { useSousHarvest } from 'hooks/useHarvest'
+import { usePastaHarvest } from 'hooks/useHarvest'
 import Balance from 'components/Balance'
 import { QuoteToken, PoolCategory } from 'config/constants/types'
 import { Pool } from 'state/types'
@@ -59,10 +59,10 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
   const stakingTokenContract = useERC20(stakingTokenAddress)
   const { account } = useWallet()
   const block = useBlock()
-  const { onApprove } = useSousApprove(stakingTokenContract, pastaId)
-  const { onStake } = useSousStake(pastaId, isBnbPool)
-  const { onUnstake } = useSousUnstake(pastaId)
-  const { onReward } = useSousHarvest(pastaId, isBnbPool)
+  const { onApprove } = usePastaApprove(stakingTokenContract, pastaId)
+  const { onStake } = usePastaStake(pastaId, isBnbPool)
+  const { onUnstake } = usePastaUnstake(pastaId)
+  const { onReward } = usePastaHarvest(pastaId, isBnbPool)
 
   const [requestedApproval, setRequestedApproval] = useState(false)
   const [pendingTx, setPendingTx] = useState(false)

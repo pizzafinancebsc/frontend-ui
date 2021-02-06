@@ -27,9 +27,9 @@ const useUnstake = (pid: number) => {
   return { onUnstake: handleUnstake }
 }
 
-const PASTAIDS = [0]
+const PASTAIDS = [1]
 
-export const useSousUnstake = (pastaId) => {
+export const usePastaUnstake = (pastaId) => {
   const dispatch = useDispatch()
   const { account } = useWallet()
   const masterChefContract = useMasterchef()

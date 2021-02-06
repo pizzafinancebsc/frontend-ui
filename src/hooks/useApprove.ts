@@ -27,7 +27,7 @@ export const useApprove = (lpContract: Contract) => {
 }
 
 // Approve a Pool
-export const useSousApprove = (lpContract: Contract, pastaId) => {
+export const usePastaApprove = (lpContract: Contract, pastaId) => {
   const dispatch = useDispatch()
   const { account }: { account: string } = useWallet()
   const pastaChefContract = usePastaChef(pastaId)

@@ -34,7 +34,7 @@ export const useAllHarvest = (farmPids: number[]) => {
   return { onReward: handleHarvest }
 }
 
-export const useSousHarvest = (pastaId, isUsingBnb = false) => {
+export const usePastaHarvest = (pastaId, isUsingBnb = false) => {
   const dispatch = useDispatch()
   const { account } = useWallet()
   const pastaChefContract = usePastaChef(pastaId)

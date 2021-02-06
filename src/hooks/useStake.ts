@@ -22,7 +22,7 @@ const useStake = (pid: number) => {
   return { onStake: handleStake }
 }
 
-export const useSousStake = (pastaId, isUsingBnb = false) => {
+export const usePastaStake = (pastaId, isUsingBnb = false) => {
   const dispatch = useDispatch()
   const { account } = useWallet()
   const masterChefContract = useMasterchef()
