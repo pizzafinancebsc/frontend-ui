@@ -79,8 +79,6 @@ const Farm: React.FC = () => {
             <li>{TranslateString(580, 'Stake PIZZA or supported tokens to earn')}</li>
             <li>{TranslateString(580, 'Any listed NEW BEP20 tokens.')}</li>
             <li>{TranslateString(404, 'You can unstake at any time..')}</li>
-            <li>{TranslateString(404, 'Please do HARVEST before unstake any amounts.')}</li>
-            <li>{TranslateString(580, 'Your full balance will be unstaked & will not get any rewards.')}</li>
             <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
             <li>{TranslateString(406, '______________________________________________________________')}</li>
             <li>{TranslateString(406, 'CAUTION!: STAKING POOLS CALCULATED "APY" DATA IS REAL TIME AND AUTOMATICALLY COLLECTED FROM BLOCKCHAIN. DATA MAY NOT ACCURATE.')}</li>

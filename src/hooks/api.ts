@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export const baseUrl = 'https://cheeseswap.info/dev/v2'
+export const baseUrl = 'https://data.cheeseswap.app/'
 
 /* eslint-disable camelcase */
 
@@ -31,7 +31,7 @@ export const useGetStats = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`${baseUrl}/tickers`)
+        const response = await fetch(`${baseUrl}/summary`)
         const responsedata: ApiStatResponse = await response.json()
 
         setData(responsedata)
