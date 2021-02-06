@@ -59,6 +59,10 @@ export default {
     56: '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3',
     97: '',
   },
+  eth: {
+   56: '0x2170Ed0880ac9A755fd29B2688956BD959F933F8',
+   97: '',
+ },
   pizzaRabbits: {
     56: '',
     97: '',
