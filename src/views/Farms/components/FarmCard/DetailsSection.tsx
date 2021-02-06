@@ -1,13 +1,16 @@
 import React from 'react'
 import useI18n from 'hooks/useI18n'
 import styled from 'styled-components'
+// import BigNumber from 'bignumber.js'
 import { Text, Flex, Link, LinkExternal } from '@pizzafinance/ui-sdk'
+// import { Farm } from 'state/types'
 import getLiquidityUrlPathParts from 'utils/getLiquidityUrlPathParts'
 
 export interface TokenAddressesObject {
   56?: string
   97?: string
 }
+
 export interface ExpandableSectionProps {
   bscScanAddress?: string
   removed?: boolean
@@ -48,7 +51,7 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
 }) => {
   const TranslateString = useI18n()
   const liquidityUrlPathParts = getLiquidityUrlPathParts({ quoteTokenAdresses, quoteTokenSymbol, tokenAddresses })
-
+//  const lpAddress = getLpAddress()
   return (
     <Wrapper>
       <Flex justifyContent="space-between">
@@ -58,9 +61,11 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
         </StyledLinkExternal>
       </Flex>
       {!removed && (
-        <Flex justifyContent="space-between">
-          <Text>{TranslateString(23, 'Total Liquidity')}:</Text>
-          <Text>{totalValueFormated}</Text>
+     <Flex justifyContent="space-between">
+          <Text>{TranslateString(23, ' ')}</Text>
+      {/*    <StyledLinkExternal href={`https://info.cheeseswap.app/pair/${tokenAddresses}`}>
+            {lpLabel}
+          </StyledLinkExternal> */}
         </Flex>
       )}
       <Flex justifyContent="flex-start">
