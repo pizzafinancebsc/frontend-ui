@@ -41,13 +41,13 @@ const HistoryChart: React.FC = () => {
         label: 'Pool Size',
         data: getDataArray('poolSize'),
         yAxisID: 'y-axis-pool',
-        ...lineStyles({ color: '#8F80BA' }),
+        ...lineStyles({ color: '#DAAF65' }),
       },
       {
         label: 'Burned',
         data: getDataArray('burned'),
         yAxisID: 'y-axis-burned',
-        ...lineStyles({ color: '#1FC7D4' }),
+        ...lineStyles({ color: '#EF4E7B' }),
       },
     ],
   }
@@ -57,7 +57,7 @@ const HistoryChart: React.FC = () => {
       borderCapStyle: 'round',
       gridLines: { display: false },
       ticks: {
-        fontFamily: 'Kanit, sans-serif',
+        fontFamily: 'Heebo, sans-serif',
         fontColor: color,
         fontSize: 14,
         lineHeight,
@@ -80,19 +80,19 @@ const HistoryChart: React.FC = () => {
           display: true,
           position: 'left',
           id: 'y-axis-pool',
-          ...axesStyles({ color: '#8f80ba', lineHeight: 1.6 }),
+          ...axesStyles({ color: '#DAAF65', lineHeight: 1.6 }),
         },
         {
           type: 'linear',
           display: true,
           position: 'right',
           id: 'y-axis-burned',
-          ...axesStyles({ color: '#1FC7D4', lineHeight: 1.5 }),
+          ...axesStyles({ color: '#EF4E7B', lineHeight: 1.5 }),
         },
       ],
       xAxes: [
         {
-          ...axesStyles({ color: '#452A7A', lineHeight: 1 }),
+          ...axesStyles({ color: '#35A969', lineHeight: 1 }),
         },
       ],
     },
