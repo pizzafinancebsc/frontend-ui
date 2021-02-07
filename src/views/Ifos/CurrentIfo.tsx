@@ -90,7 +90,7 @@ const Ifo = () => {
             </Text>
             <Button
               as="a"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScGdT5rrVMr4WOWr08pvcroSeuIOtEJf1sVdQGVdcAOqryigQ/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfQxi51mWTkB5bdH8_op_xFVpZMBMTM5HqswZRI2xLXtT5FsA/viewform"
               external
             >
               {TranslateString(516, 'Apply to launch')}
