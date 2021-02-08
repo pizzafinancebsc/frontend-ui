@@ -69,7 +69,7 @@ contractAddress: {
 poolCategory: PoolCategory.CORE,
 projectLink: 'https://hotdog.cafe/',
 harvest: true,
-tokenPerBlock: '0.13',
+tokenPerBlock: '0.03',
 sortOrder: 4,
 isFinished: false,
 tokenDecimals: 18,

@@ -63,6 +63,10 @@ export default {
    56: '0x2170Ed0880ac9A755fd29B2688956BD959F933F8',
    97: '',
  },
+ xchs: {
+  56: '0x9f51CAA2A1D1663fCa5bEFbFaf6C8acD8Ac9717a',
+  97: '',
+},
   pizzaRabbits: {
     56: '',
     97: '',
