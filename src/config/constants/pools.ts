@@ -58,7 +58,7 @@ const pools: PoolConfig[] = [
 },
 {
 pastaId: 6,
-tokenName: 'CHS',
+tokenName: 'XCHS',
 earnToken: 'CHS',
 stakingTokenName: QuoteToken.XCHS,
 stakingTokenAddress: '0x9f51caa2a1d1663fca5befbfaf6c8acd8ac9717a',    //
@@ -67,7 +67,7 @@ contractAddress: {
   56: '0xfE5Ea18dafb4aB5Da2C212441f2C54A3C9676dD9',
 },
 poolCategory: PoolCategory.CORE,
-projectLink: 'https://hotdog.cafe/',
+projectLink: 'https://cheeseswap.app/',
 harvest: true,
 tokenPerBlock: '0.03',
 sortOrder: 4,
