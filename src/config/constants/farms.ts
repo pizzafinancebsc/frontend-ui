@@ -118,10 +118,11 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0x1E90d3C88A3E830983b70E6EF9799Ff1c0deCE62',
     },
-    tokenSymbol: 'PIZZA',
+    tokenSymbol: 'XCHS',
+    tokenDecimal: 0,
     tokenAddresses: {
       97: '',
-      56: '0x1E7Fb8d811A2A7eB8E8B2038CACe2Da8A6137c36',
+      56: '0x9f51CAA2A1D1663fCa5bEFbFaf6C8acD8Ac9717a',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
