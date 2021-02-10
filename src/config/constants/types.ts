@@ -33,6 +33,7 @@ export enum QuoteToken {
   'USDC' = 'USDC',
   'CAKE' = 'CAKE',
   'XCHS' = 'XCHS',
+  'cPIZZA' = 'cPIZZA',
 }
 
 export enum PoolCategory {

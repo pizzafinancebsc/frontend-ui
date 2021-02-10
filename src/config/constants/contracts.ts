@@ -67,6 +67,10 @@ export default {
   56: '0x9f51CAA2A1D1663fCa5bEFbFaf6C8acD8Ac9717a',
   97: '',
 },
+cpizza: {
+ 56: '0xda3684575afa20309938434F3d40799B12868057',
+ 97: '',
+},
   pizzaRabbits: {
     56: '',
     97: '',

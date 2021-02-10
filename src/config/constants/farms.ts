@@ -128,6 +128,22 @@ const farms: FarmConfig[] = [
     isCommunity: true,
   },
   {
+    pid: 19,
+    lpSymbol: 'cPIZZA-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0xB91E194847576f84605B0d94Aa4E863558D86C84',
+    },
+    tokenSymbol: 'cPIZZA',
+    tokenAddresses: {
+      97: '',
+      56: '0xda3684575afa20309938434F3d40799B12868057',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+    isCommunity: false,
+  },
+  {
     pid: 17,
     lpSymbol: 'XCHS-BNB LP',
     lpAddresses: {
