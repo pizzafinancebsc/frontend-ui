@@ -112,6 +112,38 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.chs,
   },
   {
+    pid: 18,
+    lpSymbol: 'CAKE-PIZZA LP',
+    lpAddresses: {
+      97: '',
+      56: '0x46f68394943aA90C071a866b8250aa0b370d0659',
+    },
+    tokenSymbol: 'CAKE',
+    tokenAddresses: {
+      97: '',
+      56: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+    },
+    quoteTokenSymbol: QuoteToken.PIZZA,
+    quoteTokenAdresses: contracts.pizza,
+    isCommunity: true,
+  },
+  {
+    pid: 17,
+    lpSymbol: 'XCHS-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x1E90d3C88A3E830983b70E6EF9799Ff1c0deCE62',
+    },
+    tokenSymbol: 'XCHS',
+    tokenDecimal: 0,
+    tokenAddresses: {
+      97: '',
+      56: '0x9f51CAA2A1D1663fCa5bEFbFaf6C8acD8Ac9717a',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
    pid: 15,
    lpSymbol: 'BETH-ETH LP',
    lpAddresses: {

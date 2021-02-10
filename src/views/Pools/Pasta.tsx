@@ -76,7 +76,7 @@ const Farm: React.FC = () => {
             {TranslateString(282, 'PIZZA Smart Staking Pool')}
           </Heading>
           <Heading as="h4" size="l" mb="14px">
-            {TranslateString(282, 'CAUTION!!! PLEASE DO NOT SELL / MOVE YOUR EARNED #PASTA TOKEN. YOU TRANSACTION MAY REVERT THEN.')}
+            {TranslateString(282, 'CAUTION!!! PLEASE DO NOT SELL / MOVE YOUR EARNED #PASTA TOKEN. YOUR TRANSACTION MAY REVERT THEN.')}
           </Heading>
           <ul>
             <li>{TranslateString(580, 'Stake PIZZA or supported tokens to earn')}</li>
