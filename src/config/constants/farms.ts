@@ -112,6 +112,22 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.chs,
   },
   {
+    pid: 20,
+    lpSymbol: 'PIZZA-ETH LP',
+    lpAddresses: {
+      97: '',
+      56: '0x22Ba59adBd3FB5BA9E59CC8193878620bC63cCA4',
+    },
+    tokenSymbol: 'ETH',
+    tokenAddresses: {
+      97: '',
+      56: '0x2170Ed0880ac9A755fd29B2688956BD959F933F8',
+    },
+    quoteTokenSymbol: QuoteToken.PIZZA,
+    quoteTokenAdresses: contracts.pizza,
+    isCommunity: false,
+  },
+  {
     pid: 18,
     lpSymbol: 'CAKE-PIZZA LP',
     lpAddresses: {
