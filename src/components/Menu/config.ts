@@ -58,17 +58,16 @@ const config: MenuEntry[] = [
     ],
   },
   {
-  label: 'IFO',
-  icon: 'IfoIcon',
-  href: '/ifo',
-  },
-  {
     label: 'More',
     icon: 'MoreIcon',
     items: [
       {
         label: 'Github',
         href: 'https://github.com/pizzafinancebsc',
+      },
+      {
+        label: 'Docs',
+        href: 'https://docs.cheeseswap.app',
       },
     ],
   },
