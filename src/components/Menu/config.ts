@@ -67,7 +67,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: 'https://docs.cheeseswap.app',
+        href: 'https://docs.cheesemaker.farm/',
       },
     ],
   },
