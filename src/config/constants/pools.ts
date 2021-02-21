@@ -69,7 +69,7 @@ contractAddress: {
 poolCategory: PoolCategory.CORE,
 projectLink: 'https://cheeseswap.app/',
 harvest: true,
-tokenPerBlock: '0.0051',
+tokenPerBlock: '0.0000051',
 sortOrder: 4,
 isFinished: false,
 tokenDecimals: 18,
