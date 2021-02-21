@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://cheeseswap.app',
+        href: 'https://cheeseswap.app/#/swap?inputCurrency=0x2cc26dd730f548dc4ac291ae7d84a0c96980d2cb&outputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
       },
       {
         label: 'Liquidity',
-        href: 'https://cheeseswap.app/#/pool',
+        href: 'https://cheeseswap.app/#/add/0x2cc26dd730f548dc4ac291ae7d84a0c96980d2cb/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
       },
     ],
   },
@@ -45,11 +45,11 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Tokens',
-        href: 'https://info.cheeseswap.app/tokens',
+        href: 'https://info.cheeseswap.app/token/0x2cc26dd730f548dc4ac291ae7d84a0c96980d2cb',
       },
       {
         label: 'Pairs',
-        href: 'https://info.cheeseswap.app/pairs',
+        href: 'https://info.cheeseswap.app/pair/0x8405be915af56589756a275d4894fa9f0ff6ca0f',
       },
       {
         label: 'Accounts',
