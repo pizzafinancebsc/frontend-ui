@@ -68,10 +68,10 @@ contractAddress: {
 },
 poolCategory: PoolCategory.CORE,
 projectLink: 'https://cheeseswap.app/',
-harvest: true,
+harvest: false,
 tokenPerBlock: '0.0000051',
 sortOrder: 4,
-isFinished: false,
+isFinished: true,
 tokenDecimals: 18,
 },
 {
