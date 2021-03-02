@@ -25,7 +25,7 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
   }, [max])
 
   const maxTickets = useMemo(() => {
-     return parseInt(getFullDisplayBalance(max.div(new BigNumber(0.1))))
+     return parseInt(getFullDisplayBalance(max.div(new BigNumber(1))))
    }, [max])
 
    const handleChange = (e: React.FormEvent<HTMLInputElement>) => setVal(e.currentTarget.value)
@@ -44,7 +44,7 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
          Math.floor(Math.random() * maxNumber) + 1,
          Math.floor(Math.random() * maxNumber) + 1,
        ])
-       const txHash = await onMultiBuy('0.1', numbers)
+       const txHash = await onMultiBuy('1', numbers)
        // user rejected tx or didn't go thru
        if (txHash) {
          setRequestedBuy(false)
@@ -63,7 +63,7 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
   }, [maxTickets])
 
   const pizzaCosts = (amount: string): number => {
-    return +amount * 0.1
+    return +amount * 1
   }
   return (
     <Modal title={TranslateString(450, 'Enter amount of tickets to buy')} onDismiss={onDismiss}>
@@ -76,8 +76,8 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
         availableSymbol="PIZZA"
       />
       <div>
-        <Tips>{TranslateString(456, 'Your amount must be a multiple of 0.1 PIZZA')}</Tips>
-        <Tips>{TranslateString(458, '1 Ticket = 0.1 PIZZA')}</Tips>
+        <Tips>{TranslateString(456, 'Your amount must be a multiple of 1 PIZZA')}</Tips>
+        <Tips>{TranslateString(458, '1 Ticket = 1 PIZZA')}</Tips>
       </div>
       <div>
         <Announce>
