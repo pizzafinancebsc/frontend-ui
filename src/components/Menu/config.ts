@@ -53,6 +53,11 @@ const config: MenuEntry[] = [
     ],
   },
   {
+    label: 'IDO',
+    icon: 'IfoIcon',
+    href: '/ido',
+  },
+  {
     label: 'More',
     icon: 'MoreIcon',
     items: [
