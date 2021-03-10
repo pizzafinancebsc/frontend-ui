@@ -86,9 +86,9 @@ const lotteryHasDrawn = useGetLotteryHasDrawn()
         >
           {TranslateString(556, 'Collect Winnings')}
         </Button>
-        {<Button id="dashboard-buy-tickets" variant="secondary" onClick={onPresentBuy} disabled={lotteryHasDrawn}>
+        <Button id="dashboard-buy-tickets" variant="secondary" onClick={onPresentBuy} disabled={lotteryHasDrawn}>
           {TranslateString(558, 'Buy Tickets')}
-        </Button>}
+        </Button>
       </Actions>
       </CardBody>
     </StyledLotteryCard>
