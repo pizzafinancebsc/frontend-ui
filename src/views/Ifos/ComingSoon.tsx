@@ -59,7 +59,7 @@ const ComingSoon = () => {
             <Text mb={3}>
               {TranslateString(
                 504,
-                'You’ll pay for the new tokens using PIZZA-BNB LP tokens, which means you need to stake equal amounts of PIZZA and BNB in a liquidity pool to take part.',
+                'You’ll pay for the new tokens using PIZZA-BNB OR CHS-BNB LP tokens, which means you need to stake equal amounts of PIZZA or CHS and BNB in a liquidity pool to take part.',
               )}
             </Text>
             <Text mb={3}>
@@ -73,9 +73,9 @@ const ComingSoon = () => {
               <strong>{TranslateString(510, 'You get the tokens.')}</strong>
             </Text>
           </Block>
-          <MobileImage src="/images/ifo-shop.svg" alt="ifo shop" />
+          <MobileImage src="/images/ido-shop.svg" alt="ido shop" />
           <Block>
-            <Title as="h2">{TranslateString(512, 'Want to launch your own IFO?')}</Title>
+            <Title as="h2">{TranslateString(512, 'Want to launch your own IDO?')}</Title>
             <Text mb={3}>
               {TranslateString(
                 514,
@@ -93,7 +93,7 @@ const ComingSoon = () => {
           </Block>
         </div>
         <div>
-          <MainImage src="/images/ifo-shop.svg" alt="ifo shop" />
+          <MainImage src="/images/ido-shop.svg" alt="ido shop" />
         </div>
       </Content>
     </Page>

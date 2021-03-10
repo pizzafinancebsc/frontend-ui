@@ -28,7 +28,7 @@ const Description = styled(Text)`
 const IfoCardHeader: React.FC<IfoCardHeaderProps> = ({ ifoId, name, subTitle }) => {
   return (
     <StyledIfoCardHeader mb="24px" alignItems="center">
-      <img src={`/images/ifos/${ifoId}.svg`} alt={ifoId} width="64px" height="64px" />
+      <img src={`/images/idos/${ifoId}.svg`} alt={ifoId} width="64px" height="64px" />
       <div>
         <Name>{name}</Name>
         <Description>{subTitle}</Description>

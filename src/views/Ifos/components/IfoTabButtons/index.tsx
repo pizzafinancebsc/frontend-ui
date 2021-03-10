@@ -17,10 +17,10 @@ const IfoTabButtons = () => {
     <Wrapper>
       <ButtonMenu activeIndex={!isExact ? 1 : 0} size="sm" variant="subtle">
         <ButtonMenuItem as={Link} to={`${url}`}>
-          Next IFO
+          Next IDO
         </ButtonMenuItem>
         <ButtonMenuItem as={Link} to={`${url}/history`}>
-          Past IFOs
+          Past IDOs
         </ButtonMenuItem>
       </ButtonMenu>
     </Wrapper>

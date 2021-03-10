@@ -2,7 +2,7 @@ import { Ifo } from './types'
 
 const ifos: Ifo[] = [
   {
-    id: 'IFO',
+    id: 'IDO',
     address: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
     isActive: true,
     name: 'XXXXX',
