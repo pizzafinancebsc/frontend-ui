@@ -9,7 +9,7 @@ const ifos: Ifo[] = [
     subTitle: 'Mango Farm - Inflation controlled VERY LOW emission rate farming',
     description:
       'Mango Farm - Very new types of yield-farming project on BSC with very low supply.',
-    launchDate: 'March. 14',
+    launchDate: 'March. 12',
     launchTime: '01:14:38 UTC',
     saleAmount: '8,000 MANGO',
     raiseAmount: '$40,000',
