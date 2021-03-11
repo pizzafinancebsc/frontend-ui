@@ -2,23 +2,23 @@ import { Ifo } from './types'
 
 const ifos: Ifo[] = [
   {
-    id: 'IDO',
-    address: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
+    id: 'MANGO',
+    address: '0xF90Ee56bCF8411f67FD0E44776b2f2A566Ef5bC2',
     isActive: true,
-    name: 'XXXXX',
-    subTitle: 'PizzaFinance - The Best Modern Yield Farm on Binance Smart Chain',
+    name: 'MANGO',
+    subTitle: 'Mango Farm - Inflation controlled VERY LOW emission rate farming',
     description:
-      'PizzaFinance - The Best Modern Yield Farm on Binance Smart Chain.',
-    launchDate: 'Feb. 30',
-    launchTime: '8AM UTC',
-    saleAmount: '1,000,000 XXX',
-    raiseAmount: '$000,000',
-    pizzaToBurn: '$000,000',
-    projectSiteUrl: 'https://pizzafinance.app/',
+      'Mango Farm - Very new types of yield-farming project on BSC with very low supply.',
+    launchDate: 'March. 12',
+    launchTime: '01:14:38 UTC',
+    saleAmount: '8,000 MANGO',
+    raiseAmount: '$40,000',
+    pizzaToBurn: '$10,000',
+    projectSiteUrl: 'https://mangofarm.finance/',
     currency: 'PIZZA-BNB LP',
-    currencyAddress: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
+    currencyAddress: '0x8405be915af56589756a275d4894fa9f0ff6ca0f',
     tokenDecimals: 18,
-    releaseBlockNumber: 4086064,
+    releaseBlockNumber: 5639441,
   },
 ]
 
