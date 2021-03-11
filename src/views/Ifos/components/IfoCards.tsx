@@ -18,7 +18,7 @@ const IfoCardWrapper = styled.div<IfoCardWrapperProps>`
 `
 
 IfoCardWrapper.defaultProps = {
-  isSingle: false,
+  isSingle: true,
 }
 
 export default IfoCardWrapper
