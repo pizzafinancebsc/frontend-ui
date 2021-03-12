@@ -27,7 +27,7 @@ const useUnstake = (pid: number) => {
   return { onUnstake: handleUnstake }
 }
 
-const PASTAIDS = [1]
+const PASTAIDS = [0, 3, 4]
 
 export const usePastaUnstake = (pastaId) => {
   const dispatch = useDispatch()
