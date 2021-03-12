@@ -59,7 +59,7 @@ const ComingSoon = () => {
             <Text mb={3}>
               {TranslateString(
                 504,
-                'You’ll pay for the new tokens using PIZZA-BNB OR CHS-BNB LP tokens, which means you need to stake equal amounts of PIZZA or CHS and BNB in a liquidity pool to take part.',
+                'You’ll pay for the new tokens using PIZZA-BNB LP tokens, which means you need to stake equal amounts of PIZZA and BNB in a liquidity pool to take part.',
               )}
             </Text>
             <Text mb={3}>
@@ -84,7 +84,7 @@ const ComingSoon = () => {
             </Text>
             <Button
               as="a"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfQxi51mWTkB5bdH8_op_xFVpZMBMTM5HqswZRI2xLXtT5FsA/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd8TKXXIFpHCIlhRLqpLtRCdl7gpIok_sPnFcpTdMghC_PqWg/viewform"
               target="_blank"
               rel="noopener noreferrer"
             >

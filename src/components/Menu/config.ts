@@ -30,10 +30,15 @@ const config: MenuEntry[] = [
     icon: 'PoolIcon',
     href: '/pools',
   },
-{
+  {
     label: 'Lottery',
     icon: 'TicketIcon',
     href: '/lottery',
+  },
+  {
+    label: 'IDO',
+    icon: 'IfoIcon',
+    href: '/ido',
   },
   {
     label: 'Info',
@@ -56,11 +61,6 @@ const config: MenuEntry[] = [
         href: 'https://info.cheeseswap.app/accounts',
       },
     ],
-  },
-  {
-    label: 'IDO',
-    icon: 'IfoIcon',
-    href: '/ido',
   },
   {
     label: 'More',
