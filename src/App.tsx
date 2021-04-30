@@ -1,5 +1,5 @@
-import React, { useEffect, Suspense, lazy } from 'react'
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
+import React, { Suspense, useEffect, lazy } from 'react'
+import { HashRouter, Route, Switch, Router  } from 'react-router-dom'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { ResetCSS } from '@pizzafinance/ui-sdk'
 import BigNumber from 'bignumber.js'
@@ -7,15 +7,18 @@ import { useFetchPublicData } from 'state/hooks'
 import GlobalStyle from './style/Global'
 import Menu from './components/Menu'
 import PageLoader from './components/PageLoader'
-// import NftGlobalNotification from './views/Nft/components/NftGlobalNotification'
-import Pools from './views/Pools'
 
-// Route-based code splitting
-// Only pool is included in the main bundle because of it's the most visited page'
-const Home = lazy(() => import('./views/Home'))
-const Farms = lazy(() => import('./views/Farms'))
-const Lottery = lazy(() => import('./views/Lottery'))
-const Ifos = lazy(() => import('./views/Ifos'))
+import Pools from './views/Pools'
+import Home from './views/Home'
+import Farms from './views/Farms'
+import Ifos from './views/Ifos'
+import Lottery from './views/Lottery'
+
+
+// const Home = lazy(() => import('./views/Home'))
+// const Farms = lazy(() => import('./views/Farms'))
+// const Lottery = lazy(() => import('./views/Lottery'))
+// const Ifos = lazy(() => import('./views/Ifos'))
 const NotFound = lazy(() => import('./views/NotFound'))
 // const Nft = lazy(() => import('./views/Nft'))
 
@@ -36,7 +39,9 @@ const App: React.FC = () => {
   useFetchPublicData()
 
   return (
-    <Router>
+    <Suspense fallback={null}>
+     <HashRouter>
+
       <ResetCSS />
       <GlobalStyle />
       <Menu>
@@ -54,22 +59,15 @@ const App: React.FC = () => {
             <Route path="/lottery">
               <Lottery />
             </Route>
-            <Route path="/ido">
+              <Route path="/ido">
               <Ifos />
             </Route>
-            {/* Redirect */}
-            <Route path="/staking">
-              <Redirect to="/pools" />
-            </Route>
-            <Route path="/pasta">
-              <Redirect to="/pools" />
-            </Route>
-            {/* 404 */}
-            <Route component={NotFound} />
+             <Route component={NotFound} />
           </Switch>
         </Suspense>
       </Menu>
-    </Router>
+          </HashRouter>
+    </Suspense>
   )
 }
 

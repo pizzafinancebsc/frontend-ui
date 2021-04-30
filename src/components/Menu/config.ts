@@ -50,15 +50,15 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Tokens',
-        href: 'https://info.cheeseswap.app/token/0x2cc26dd730f548dc4ac291ae7d84a0c96980d2cb',
+        href: 'https://info.cheeseswap.app/#/token/0x2cc26dd730f548dc4ac291ae7d84a0c96980d2cb',
       },
       {
         label: 'Pairs',
-        href: 'https://info.cheeseswap.app/pair/0x8405be915af56589756a275d4894fa9f0ff6ca0f',
+        href: 'https://info.cheeseswap.app/#/pair/0x8405be915af56589756a275d4894fa9f0ff6ca0f',
       },
       {
         label: 'Accounts',
-        href: 'https://info.cheeseswap.app/accounts',
+        href: 'https://info.cheeseswap.app/#/accounts',
       },
     ],
   },
