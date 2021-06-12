@@ -11,8 +11,8 @@ import PageLoader from './components/PageLoader'
 import Pools from './views/Pools'
 import Home from './views/Home'
 import Farms from './views/Farms'
-import Ifos from './views/Ifos'
 import Lottery from './views/Lottery'
+import Ifos from './views/Ifos'
 
 
 // const Home = lazy(() => import('./views/Home'))
