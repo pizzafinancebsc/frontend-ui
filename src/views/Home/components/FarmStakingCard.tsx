@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
-import { Heading, Card, CardBody, Button } from '@pizzafinance/ui-sdk'
+import { Heading, Card, CardBody, Button } from '@kittylabs/uikit'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import useI18n from 'hooks/useI18n'
 import { useAllHarvest } from 'hooks/useHarvest'
@@ -74,14 +74,13 @@ const FarmedStakingCard = () => {
               id="harvest-all"
               disabled={balancesWithValue.length <= 0 || pendingTx}
               onClick={harvestAllFarms}
-              fullWidth
-            >
+              >
               {pendingTx
                 ? TranslateString(548, 'Collecting PIZZA')
                 : TranslateString(999, `Harvest all (${balancesWithValue.length})`)}
             </Button>
           ) : (
-            <UnlockButton fullWidth />
+            <UnlockButton  />
           )}
         </Actions>
       </CardBody>

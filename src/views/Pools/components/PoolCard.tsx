@@ -1,7 +1,7 @@
 import BigNumber from 'bignumber.js'
 import React, { useCallback, useState } from 'react'
 import styled from 'styled-components'
-import { Button, IconButton, useModal, AddIcon, Image } from '@pizzafinance/ui-sdk'
+import { Button, IconButton, useModal, AddIcon, Image } from '@kittylabs/uikit'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import UnlockButton from 'components/UnlockButton'
 import Label from 'components/Label'
@@ -152,7 +152,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
           {account &&
             (needsApproval && !isOldPasta ? (
               <div style={{ flex: 1 }}>
-                <Button disabled={isFinished || requestedApproval} onClick={handleApprove} fullWidth>
+                <Button disabled={isFinished || requestedApproval} onClick={handleApprove} >
                   {`Approve ${stakingTokenName}`}
                 </Button>
               </div>

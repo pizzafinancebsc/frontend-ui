@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Menu as UikitMenu } from '@pizzafinance/ui-sdk'
+import { Menu as UikitMenu } from '@kittylabs/uikit'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { allLanguages } from 'config/localisation/languageCodes'
 import { LanguageContext } from 'contexts/Localisation/languageContext'

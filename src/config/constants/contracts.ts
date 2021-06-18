@@ -67,6 +67,22 @@ export default {
   56: '0x9f51CAA2A1D1663fCa5bEFbFaf6C8acD8Ac9717a',
   97: '',
 },
+kittywbnb: {
+ 56: '0x61cCA94e696981c2Df97bC0e33E4a6583606732A',
+ 97: '',
+},
+kittychs: {
+ 56: '0xe02ce23ba2e9426a74069d5e2d6f0043d8d44667',
+ 97: '',
+},
+kittyusdt: {
+ 56: '0xB18B577EF990f554D2685eA509Ff943aA926e585',
+ 97: '',
+},
+kitty: {
+ 56: '0x5b4963B964bAc5C2Db83e53ffFe46E0cb83a1346',
+ 97: '',
+},
 cpizza: {
  56: '0xda3684575afa20309938434F3d40799B12868057',
  97: '',

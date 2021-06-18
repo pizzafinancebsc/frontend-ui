@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useParticleBurst } from '@pizzafinance/ui-sdk'
+import { useParticleBurst } from '@kittylabs/uikit'
 import { useLocation } from 'react-router-dom'
 
 const disableWhenNotChristmas = () => {

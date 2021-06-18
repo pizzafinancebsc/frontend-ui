@@ -107,7 +107,7 @@ const CardFooter: React.FC<Props> = ({
                 <span role="img" aria-label="pasta">
                   {' '}
                 </span>
-                {TranslateString(408, 'Total Stake of')} {tokenName}:
+                {TranslateString(408, 'Total Stake of')} {'LPs'}:
               </Label>
             </FlexFull>
             <Balance fontSize="14px" isDisabled={isFinished} value={getBalanceNumber(totalStaked)} />

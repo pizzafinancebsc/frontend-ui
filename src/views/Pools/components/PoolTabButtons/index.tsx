@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useRouteMatch, Link } from 'react-router-dom'
-import { ButtonMenu, ButtonMenuItem } from '@pizzafinance/ui-sdk'
+import { ButtonMenu, ButtonMenuItem } from '@kittylabs/uikit'
 import useI18n from 'hooks/useI18n'
 
 const PoolTabButtons = () => {
@@ -10,7 +10,7 @@ const PoolTabButtons = () => {
 
   return (
     <Wrapper>
-      <ButtonMenu activeIndex={!isExact ? 1 : 0} size="sm" variant="subtle">
+      <ButtonMenu activeIndex={!isExact ? 1 : 0}  variant="subtle">
         <ButtonMenuItem as={Link} to={`${url}`}>
           {TranslateString(999, 'Active')}
         </ButtonMenuItem>
