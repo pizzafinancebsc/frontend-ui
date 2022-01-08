@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button, Heading, Text, LogoIcon } from '@pizzafinance/ui-sdk'
+import { Button, Heading, Text, LogoIcon } from '@kittylabs/uikit'
 import Page from 'components/layout/Page'
 import useI18n from 'hooks/useI18n'
 
@@ -21,7 +21,7 @@ const NotFound = () => {
         <LogoIcon width="64px" mb="8px" />
         <Heading size="xxl">404</Heading>
         <Text mb="16px">{TranslateString(999, 'Oops, page not found.')}</Text>
-        <Button as="a" href="/" size="sm">
+        <Button as="a" href="/" >
           {TranslateString(999, 'Back Home')}
         </Button>
       </StyledNotFound>

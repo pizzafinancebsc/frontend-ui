@@ -1,81 +1,37 @@
-import { MenuEntry } from '@pizzafinance/ui-sdk'
+import { MenuEntry } from '@kittylabs/uikit'
 
 const config: MenuEntry[] = [
   {
-    label: 'Home',
-    icon: 'HomeIcon',
-    href: '/',
-  },
-  {
-    label: 'Trade',
-    icon: 'TradeIcon',
-    items: [
-      {
-        label: 'Exchange',
-        href: 'https://cheeseswap.app/#/swap?inputCurrency=0x2cc26dd730f548dc4ac291ae7d84a0c96980d2cb&outputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
-      },
-      {
-        label: 'Liquidity',
-        href: 'https://cheeseswap.app/#/add/0x2cc26dd730f548dc4ac291ae7d84a0c96980d2cb/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
-      },
-    ],
-  },
-  {
-    label: 'Farms',
+    label: 'Exchange',
     icon: 'FarmIcon',
-    href: '/farms',
+    href: 'https://info.cheeseswap.app/#/pair/0x61cca94e696981c2df97bc0e33e4a6583606732a',
   },
   {
-    label: 'Pools',
+    label: 'Liquidity Add',
     icon: 'PoolIcon',
-    href: '/pools',
+    href: 'https://cheeseswap.app/#/add/0x5b4963b964bac5c2db83e53fffe46e0cb83a1346/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
   },
   {
-    label: 'Lottery',
+    label: 'Token Contract',
     icon: 'TicketIcon',
-    href: '/lottery',
+    href: 'https://bscscan.com/address/0x5b4963B964bAc5C2Db83e53ffFe46E0cb83a1346#code',
   },
   {
-    label: 'IDO',
-    icon: 'IfoIcon',
-    href: '/ido',
+    label: 'Token Holders',
+    icon: 'TicketIcon',
+    href: 'https://bscscan.com/token/0x5b4963B964bAc5C2Db83e53ffFe46E0cb83a1346#balances',
   },
   {
-    label: 'Info',
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: 'Overview',
-        href: 'https://info.cheeseswap.app',
-      },
-      {
-        label: 'Tokens',
-        href: 'https://info.cheeseswap.app/#/token/0x2cc26dd730f548dc4ac291ae7d84a0c96980d2cb',
-      },
-      {
-        label: 'Pairs',
-        href: 'https://info.cheeseswap.app/#/pair/0x8405be915af56589756a275d4894fa9f0ff6ca0f',
-      },
-      {
-        label: 'Accounts',
-        href: 'https://info.cheeseswap.app/#/accounts',
-      },
-    ],
+    label: 'Kitty Web',
+    icon: 'TicketIcon',
+    href: 'https://kittytoken.io',
   },
   {
-    label: 'More',
-    icon: 'MoreIcon',
-    items: [
-      {
-        label: 'Github',
-        href: 'https://github.com/pizzafinancebsc',
-      },
-      {
-        label: 'Docs',
-        href: 'https://docs.cheesemaker.farm/',
-      },
-    ],
+    label: 'Kitty News',
+    icon: 'TicketIcon',
+    href: 'https://t.me/kittynewsbsc',
   },
+
 ]
 
 export default config

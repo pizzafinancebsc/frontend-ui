@@ -1,6 +1,6 @@
 import BigNumber from 'bignumber.js'
 import React, { useCallback, useMemo, useState } from 'react'
-import { Button, Modal } from '@pizzafinance/ui-sdk'
+import { Button, Modal } from '@kittylabs/uikit'
 import ModalActions from 'components/ModalActions'
 import TokenInput from '../../../components/TokenInput'
 import useI18n from '../../../hooks/useI18n'
@@ -42,11 +42,11 @@ const DepositModal: React.FC<DepositModalProps> = ({ max, onConfirm, onDismiss, 
         symbol={tokenName}
       />
       <ModalActions>
-        <Button fullWidth variant="secondary" onClick={onDismiss}>
+        <Button  variant="secondary" onClick={onDismiss}>
           {TranslateString(462, 'Cancel')}
         </Button>
         <Button
-          fullWidth
+          
           disabled={pendingTx}
           onClick={async () => {
             setPendingTx(true)

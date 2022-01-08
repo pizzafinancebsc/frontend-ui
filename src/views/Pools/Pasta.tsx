@@ -3,7 +3,7 @@ import { Route, useRouteMatch } from 'react-router-dom'
 import BigNumber from 'bignumber.js'
 import styled from 'styled-components'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
-import { Heading } from '@pizzafinance/ui-sdk'
+import { Heading } from '@kittylabs/uikit'
 import { BLOCKS_PER_YEAR } from 'config'
 import orderBy from 'lodash/orderBy'
 import partition from 'lodash/partition'
@@ -14,7 +14,7 @@ import { useFarms, usePriceBnbBusd, usePools } from 'state/hooks'
 import { QuoteToken, PoolCategory } from 'config/constants/types'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
-import Coming from './components/Coming'
+
 import PoolCard from './components/PoolCard'
 import PoolTabButtons from './components/PoolTabButtons'
 import Divider from './components/Divider'
@@ -70,25 +70,13 @@ const Farm: React.FC = () => {
       <Hero>
         <div>
           <Heading as="h1" size="xxl" mb="16px">
-            {TranslateString(282, 'SMART Pool')}
+            {TranslateString(282, 'KITTY BNB Mining Pool')}
           </Heading>
           <Heading as="h4" size="l" mb="14px">
-            {TranslateString(282, 'PIZZA Smart Staking Pool')}
+            {TranslateString(282, 'Earn BNB by staking KITTY Pairs BNB/CHS/USDT LP')}
           </Heading>
-          <Heading as="h4" size="l" mb="14px">
-            {TranslateString(282, 'CAUTION!!! PLEASE DO NOT SELL / MOVE YOUR EARNED #PASTA TOKEN. YOUR TRANSACTION MAY REVERT THEN.')}
-          </Heading>
-          <ul>
-            <li>{TranslateString(580, 'Stake PIZZA or supported tokens to earn')}</li>
-            <li>{TranslateString(580, 'Any listed NEW BEP20 tokens.')}</li>
-            <li>{TranslateString(404, 'You can unstake at any time..')}</li>
-            <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
-            <li>{TranslateString(406, '______________________________________________________________')}</li>
-            <li>{TranslateString(406, 'CAUTION!: STAKING POOLS CALCULATED "APY" DATA IS REAL TIME AND AUTOMATICALLY COLLECTED FROM BLOCKCHAIN. DATA MAY NOT ACCURATE.')}</li>
-          </ul>
-        </div>
-        <img src="/images/pasta-space.svg" alt="PASTA POOL icon" width={250} height={191} />
-      </Hero>
+          </div>
+            </Hero>
       <PoolTabButtons />
       <Divider />
       <FlexLayout>
@@ -97,7 +85,7 @@ const Farm: React.FC = () => {
             {orderBy(openPools, ['sortOrder']).map((pool) => (
               <PoolCard key={pool.pastaId} pool={pool} />
             ))}
-            <Coming />
+
           </>
         </Route>
         <Route path={`${path}/history`}>
