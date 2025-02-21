@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect, lazy } from 'react'
-import { HashRouter, Route, Switch, Router  } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { ResetCSS } from '@pizzafinance/ui-sdk'
 import BigNumber from 'bignumber.js'
@@ -15,12 +15,9 @@ import Lottery from './views/Lottery'
 import Ifos from './views/Ifos'
 
 
-// const Home = lazy(() => import('./views/Home'))
-// const Farms = lazy(() => import('./views/Farms'))
-// const Lottery = lazy(() => import('./views/Lottery'))
-// const Ifos = lazy(() => import('./views/Ifos'))
+
 const NotFound = lazy(() => import('./views/NotFound'))
-// const Nft = lazy(() => import('./views/Nft'))
+
 
 // This config is required for number formating
 BigNumber.config({

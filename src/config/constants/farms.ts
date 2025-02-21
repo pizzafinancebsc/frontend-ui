@@ -159,7 +159,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
     isCommunity: false,
   },
-  {
+/*  {
     pid: 17,
     lpSymbol: 'XCHS-BNB LP',
     lpAddresses: {
@@ -191,6 +191,7 @@ const farms: FarmConfig[] = [
    quoteTokenAdresses: contracts.eth,
    isCommunity: false,
  },
+
  {
   pid: 16,
   lpSymbol: 'BETH-PIZZA LP',
@@ -207,6 +208,7 @@ const farms: FarmConfig[] = [
   quoteTokenAdresses: contracts.pizza,
   isCommunity: false,
 },
+*/
   {
    pid: 5,
    lpSymbol: 'BNB-BUSD LP',

@@ -20,7 +20,7 @@ const CardMidContent = styled(Heading).attrs({ size: 'xl' })`
   line-height: 44px;
 `
 const EarnAssetCard = () => {
-  const latestPools: Pool[] = orderBy(pools, ['sortOrder', 'pid'], ['desc', 'desc']).slice(0, 2)
+  const latestPools: Pool[] = orderBy(pools, ['sortOrder', 'pid'], ['desc', 'desc']).slice(0,0)
 
   // Always include PIZZA
   const assets = ['PIZZA', ...latestPools.map((pool) => pool.tokenName)].join(', ')

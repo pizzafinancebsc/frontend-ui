@@ -31,9 +31,7 @@ const PartnerCard = () => {
         <StyledLink href="https://cheeseswap.app/">
           <CardImage src="/images/cheeseswap.svg" alt="CheeseSwap logo" width={180} />
         </StyledLink>
-        <StyledLink href="https://keep3rb.network/">
-          <CardImage src="/images/keep3rb.svg" alt="Keep3rb logo" width={180} />
-        </StyledLink>
+      
       </CardBody>
     </StyledPartnerCard>
   )
