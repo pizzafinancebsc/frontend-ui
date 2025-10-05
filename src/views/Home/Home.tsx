@@ -5,11 +5,11 @@ import useI18n from 'hooks/useI18n'
 import Page from 'components/layout/Page'
 import PizzaStats from './components/PizzaStats'
 import FarmStakingCard from './components/FarmStakingCard'
-import LotteryCard from './components/LotteryCard'
+// import LotteryCard from './components/LotteryCard'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 import EarnAPYCard from './components/EarnAPYCard'
 import EarnAssetCard from './components/EarnAssetCard'
-import WinCard from './components/WinCard'
+// import WinCard from './components/WinCard'
 
 const Hero = styled.div`
   align-items: center;
@@ -90,16 +90,15 @@ const Home: React.FC = () => {
       <div>
       <Cards>
         <FarmStakingCard />
-        <LotteryCard />
+        <TotalValueLockedCard />
       </Cards>
       <CTACards>
         <EarnAPYCard />
         <EarnAssetCard />
-        <WinCard />
-      </CTACards>
-      <Cards>
+        </CTACards>
         <PizzaStats />
-        <TotalValueLockedCard />
+      <Cards>
+      {/*   */}  
       </Cards>
       </div>
     </Page>

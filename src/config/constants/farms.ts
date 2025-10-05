@@ -209,7 +209,7 @@ const farms: FarmConfig[] = [
   isCommunity: false,
 },
 */
-  {
+ /* {
    pid: 5,
    lpSymbol: 'BNB-BUSD LP',
    lpAddresses: {
@@ -225,7 +225,9 @@ const farms: FarmConfig[] = [
    quoteTokenAdresses: contracts.busd,
    isCommunity: false,
  },
-  {
+ */
+ 
+ /* {
     pid: 7,
     lpSymbol: 'ETH-BUSD LP',
     lpAddresses: {
@@ -239,7 +241,8 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
-  },
+  }, */
+  
  {
    pid: 6,
    lpSymbol: 'USDT-BNB LP',
@@ -256,7 +259,8 @@ const farms: FarmConfig[] = [
    quoteTokenAdresses: contracts.wbnb,
    isCommunity: false,
  },
- {
+ 
+/* {
   pid: 8,
   lpSymbol: 'DAI-BNB LP',
   lpAddresses: {
@@ -272,7 +276,9 @@ const farms: FarmConfig[] = [
   quoteTokenAdresses: contracts.wbnb,
   isCommunity: false,
 },
-{
+*/
+
+/* {
  pid: 9,
  lpSymbol: 'USDC-BNB LP',
  lpAddresses: {
@@ -287,7 +293,8 @@ const farms: FarmConfig[] = [
  quoteTokenSymbol: QuoteToken.BNB,
  quoteTokenAdresses: contracts.wbnb,
  isCommunity: false,
-},
+}, */
+
   {
     pid: 4,
     lpSymbol: 'CHS-BNB LP',
@@ -318,7 +325,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
-  {
+ /* {
     pid: 12,
     lpSymbol: 'CAKE-BNB LP',
     lpAddresses: {
@@ -333,7 +340,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
     isCommunity: true,
-  },
+  }, */
 ]
 
 export default farms
